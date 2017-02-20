@@ -1,0 +1,20 @@
+{ @Reference
+     @Tag { kingston1995lout.user }
+     @Type { Book }
+     @Author { Jeffrey H. Kingston }
+     @Title { A User's Guide to the Lout Document Formatting
+System (Version 3) }
+     @Institution { Basser Department of Computer Science }
+     @Address { University of Sydney }
+     @Year { 1995 }
+}
+{ @Reference
+     @Tag { kingston1995lout.expert }
+     @Type { Book }
+     @Author { Jeffrey H. Kingston }
+     @Title { An Expert's Guide to the Lout Document Formatting
+System (Version 3) }
+     @Institution { Basser Department of Computer Science }
+     @Address { University of Sydney }
+     @Year { 1995 }
+}

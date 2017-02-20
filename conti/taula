@@ -1,0 +1,183 @@
+@Section
+    @Title { Taules }
+@Begin
+
+@PP
+Les definicions per les taules es troben en un fitxer anomenat @Code "tbl", de manera que per utilitzar-les hem d'afegir al principi del document la línia @Code "@SysInclude { tbl }". Les taules donades per aquestes definicions poden tenir un màxim de 26 columnes, tal i com es veurà en els exemples.
+
+@PP
+Per crear una taula correctament, l'estructura és la que hi ha a continuació.
+
+@ID @Code {
+"@Table"
+"   @Caption { Una taula }"
+"@Tbl"
+"    aformat { @Cell @B A | @Cell @B B | @Cell @B C }"
+"    bformat { @Cell A | @Cell B | @Cell C}"
+"    cformat { @Cell @I A | @Cell @I B | @Cell @B C}"
+"    rule { yes }"
+"{"
+"@Rowa"
+"    A {Cel·la a A}"
+"    B {Cel·la a B}"
+"    C {Cel·la a C}"
+"@Rowb"
+"    A {Cel·la b A}"
+"    B {Cel·la b B}"
+"    C {Cel·la b C}"
+"@Rowb"
+"    A {Cel·la b A}"
+"    B {Cel·la b B}"
+"    C {Cel·la b C}"
+"@Rowc"
+"    A {Cel·la c A}"
+"    B {Cel·la c B}"
+"    C {Cel·la c C}"
+"}"
+}
+
+@Table
+   @Caption { Una taula }
+@Tbl
+    aformat { @Cell @B A | @Cell @B B | @Cell @B C }
+    bformat { @Cell A | @Cell B | @Cell C}
+    cformat { @Cell @I A | @Cell @I B | @Cell @B C}
+    rule { yes }
+{
+@Rowa
+    A {Cel·la a A}
+    B {Cel·la a B}
+    C {Cel·la a C}
+@Rowb
+    A {Cel·la b A}
+    B {Cel·la b B}
+    C {Cel·la b C}
+@Rowb
+    A {Cel·la b A}
+    B {Cel·la b B}
+    C {Cel·la b C}
+@Rowc
+    A {Cel·la c A}
+    B {Cel·la c B}
+    C {Cel·la c C}
+}
+
+@PP
+També podem definir els estils a cada fila en comptes de definir-los amb anterioritat. Acostuma a ser recomanable l'ús dels estils com en el cas anterior.
+
+@ID @Code {
+"@Table"
+"   @Caption { Una altra taula }"
+"@Tbl"
+"    rule { yes }"
+"{"
+"@Row"
+"    format { @Cell @B A | @Cell @B B | @Cell @B C }"
+"    A {Cel·la a A}"
+"    B {Cel·la a B}"
+"    C {Cel·la a C}"
+"@Row"
+"    format { @Cell A | @Cell B | @Cell C}"
+"    A {Cel·la b A}"
+"    B {Cel·la b B}"
+"    C {Cel·la b C}"
+"@Row"
+"    format { @Cell A | @Cell B | @Cell C}"
+"    A {Cel·la b A}"
+"    B {Cel·la b B}"
+"    C {Cel·la b C}"
+"@Row"
+"    format { @Cell @I A | @Cell @I B | @Cell @B C}"
+"    A {Cel·la c A}"
+"    B {Cel·la c B}"
+"    C {Cel·la c C}"
+"}"
+}
+
+@Table
+   @Caption { Una altra taula } 
+@Tbl
+    rule { yes }
+{
+@Row
+    format { @Cell @B A | @Cell @B B | @Cell @B C }
+    A {Cel·la a A}
+    B {Cel·la a B}
+    C {Cel·la a C}
+@Row
+    format { @Cell A | @Cell B | @Cell C}
+    A {Cel·la b A}
+    B {Cel·la b B}
+    C {Cel·la b C}
+@Row
+    format { @Cell A | @Cell B | @Cell C}
+    A {Cel·la b A}
+    B {Cel·la b B}
+    C {Cel·la b C}
+@Row
+    format { @Cell @I A | @Cell @I B | @Cell @B C}
+    A {Cel·la c A}
+    B {Cel·la c B}
+    C {Cel·la c C}
+}
+
+@PP
+Òbviament també podem fer taules més complexes. Considereu el següent cas de cel·les que n'ocupen d'altres.
+
+@ID @Code {
+"@Table"
+"   @Caption { Una taula més }"
+"   @CaptionPos { Above }"
+"   @Location { Display } # Vegeu uns paràgrafs més endavant"
+"@Tbl"
+"    rule { yes }"
+"{"
+"@Row"
+"    format { @Cell @B A | @Cell @B B | @StartVSpan @Cell @B C }"
+"    A {Cel·la a A}"
+"    B {Cel·la a B}"
+"    C {Cel·la a C}"
+"@Row"
+"    format { @StartHSpan @Cell A | @HSpan | @VSpan}"
+"    A {Cel·la b A}"
+"@Row"
+"    format { @Cell A | @StartHVSpan @Cell B | @HSpan}"
+"    A {Cel·la b A}"
+"    B {Cel·la b B}"
+"@Row"
+"    format { @Cell @I A | @VSpan | }"
+"    A {Cel·la c A}"
+"}"
+}
+
+@Table
+    @Caption { Una taula més }
+    @CaptionPos { Above }
+    @Location { Display }
+@Tbl
+    rule { yes }
+{
+@Row
+    format { @Cell @B A | @Cell @B B | @StartVSpan @Cell @B C }
+    A {Cel·la a A}
+    B {Cel·la a B}
+    C {Cel·la a C}
+@Row
+    format { @StartHSpan @Cell A | @HSpan | @VSpan}
+    A {Cel·la b A}
+@Row
+    format { @Cell A | @StartHVSpan @Cell B | @HSpan}
+    A {Cel·la b A}
+    B {Cel·la b B}
+@Row
+    format { @Cell @I A | @VSpan | }
+    A {Cel·la c A}
+}
+
+@PP
+Aquestes indicacions permeten solucionar una gran diversitat de demandes. Tanmateix, per documents més complexos on es requereixin taules que perdurin múltiples pàgines o que tinguin només algunes línies de vora pintades, l'usuari haurà de recòrrer a la guia recomanada.
+
+@PP
+La posició predeterminada de les taules es pot configurar afegint la línia @Code "@TableLocation { ... }" al fitxer d'estil del document en comptes d'escriure @Code "@Location { ... }" a cada una de les taules. Les opcions més utilitzades són @Code{Display} i @Code{PageTop}. També hi ha les opcions @Code{FullPage}, @Code{PageFoot}, @Code{ColTop}, @Code{ColFoot}, @Code{ColEnd}, @Code{TryAfterLine} o @Code{Display}, entre d'altres. Les opcions que tenen en compte la columna són molt útils en documents amb més d'una columna de text o amb múltiples capítols. En aquest document s'ha utilitzat @Code{Display}.
+
+@End @Section

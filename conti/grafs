@@ -1,0 +1,104 @@
+@Section
+    @Title { Gràfics i figures }
+@Begin
+
+@PP
+Lout proporciona eines per aconseguir un control més o menys complex sobre l'estètica dels elements que constitueixen els documents. Amb @Code "{ rgb 0 0 1.0 } @Colour { text en blau }" obtenim, òbviament, { rgb 0 0 1.0 } @Colour { text en blau }. A @Cite { $kingston1995lout.user, pàgina 162 } s'especifiquen els colors predefinits que el símbol @Code "@Colour" entén i que es poden substituir per el conjunt @Code "{ rgb 0 0 1.0 }". També es pot utilitzar el model de color CMYK amb @Code cmyk en comptes de @Code rgb, afegint un altre argument per descriure correctament el color a utilitzar.
+
+@PP
+També s'ofereix la possibilitat d'utilitzar textures, amb resultats com grid @Texture @B aquest. La utilització de textures amb @Code "@Texture", com en el cas de @Code "@Colour", no es limita només a text i es pot utilitzar en diferents elements. El lector interessat pot consultar-ne l'ús i les diferents opcions a @Cite { $kingston1995lout.user, pàgines 163 i 164 }.
+
+@PP
+Es pot encaixar el text amb @Box { una caixa } mitjançant @Code "@Box { una caixa }". De fet, qualsevol objecte que segueixi @Code "@Box" apareixerà encaixat. Aquest símbol disposa de múltiples opcions d'especial interés, que es poden consultar a @Cite { $kingston1995lout.user, pàgina 167 }. Utilitzant @Code "@CurveBox arrodonits" i @Code "@ShadowBox ombra" s'obté una caixa amb els vèrtexs @ZeroHeight @CurveBox arrodonits o amb una @ZeroHeight @ShadowBox ombra de la caixa, respectivament.
+
+@PP
+Hi ha un munt de símbols, com @Code "@Rotate" o @Code "@HMirror" @FootNote { Aquests símbols s'han presentat a presentat a  @cref @TitleOf simbo .} , que permeten satisfer les necessitats de l'usuari. Aquesta guia no és una referència per un usuari quotidià, sinó una introducció per a un usuari inexpert que necessiti escriure un document per primera vegada. Per resoldre qualsevol problema relacionat amb l'ús de Lout el més assenyat és dirigir-se a @Cite { $kingston1995lout.user } i no a aquesta guia.
+
+@PP
+Lout proporciona símbols per crear organigrames, gràfics matemàtics de funcions i dades i diagrames de barres o circulars amb certa facilitat amb les llibreries @Code diag, @Code graph i @Code pie , respectivament . A continuació es mostren alguns exemples de l'autor basats en @Cite { $kingston1995lout.user } per tal que el lector copsi els resultats que es poden obtenir amb relativament poc esforç. 
+
+@CD
+@Diag
+{
+    @Tbl
+        aformat { @Cell A | @Cell B | @Cell C }
+        marginhorizontal { 0.5c }
+        marginvertical { 0.25c }
+    {
+    @Rowa
+        B { A:: @Square {A} }
+    @Rowa
+        A { B:: @Square { B } }
+        C { C:: @Ellipse { C } }
+    @Rowa
+        C { D:: @Ellipse alabel {etiqueta} { D } }
+    }
+    @Link from { A } to { B } ylabel { text }
+    @Arrow from { A } to { C }
+    @Arrow from { C } to { D }
+}
+
+@CD
+@Graph
+    abovecaption { Gràfic amb @E { x cdot cos pmatrix { 180x over pi} } }
+{
+    @Data
+        points { plus }
+        pairs { dashed }
+    { 0 0 1 1 2 -1 3 -4 4 -3 5 4 6 6 }
+    @Data
+        points { none }
+        pairs {solid}
+    {
+        xloop from {-1} to {6} by {0.1} do {
+            x x * cos { x * 180 / pi }        
+        }
+    }
+}
+
+@CD
+@Pie
+    abovecaption { Quota de mercat de la competència }
+{
+    @Slice
+        weight { 33 }
+        paint { lightred }
+        label { "B/E" Aerospace /.25v (33%) }
+    @Slice
+        weight { 30 }
+        paint { lightgreen }
+        label { Zodiac / Aerospace /.25v (30%) }
+    @Slice
+        weight { 20 }
+        paint { lightblue }
+        label { Recaro /.25v (20%) }
+    @Slice
+        weight { 17 }
+        paint { lightgrey }
+        label { Altres /.25v (17%) }
+}
+
+@PP
+Evidentment és recomanable utilitzar i tractar les dades amb les eines que proporciona Lout per obtenir un document consistent estèticament. Tanmateix, és evident que la majoria de lectors prefereriran o necessitaran utilitzar les seves eines per aconseguir el resultat que es busca. Lout permet incloure il·lustracions produïdes amb eines externes. Aquestes han de ser forçosament fitxers EPS (Encapsulated PostScript), fet que es pot presentar com un inconvenient @FootNote { Si l'eina utilitzada per produïr l'il·lustració no exporta a EPS, caldrà utilitzar algun conversor o encapsulador per tal que Lout pugui utilitzar fitxers amb altres extensions. }. A continuació s'explica com incloure un fitxer EPS al document. 
+
+@PP
+Amb @Code "@IncludeGraphic plot.eps", el gràfic @Code plot.eps apareixerà en el punt on s'hagi invocat el símbol. En casos on una imatge s'hagi de repetir múltiples vegades i aquesta tingui un pes excessiu, cal afegir @Code "@IncludeGraphicRepeated { plot.eps }" a la zona d'includeres, sota la definició de la classe del document. Per invocar la imatge repetida, utilitzant el símbol @Code "@IncludeGraphic plot.eps" és suficient.
+
+@PP
+Les figures s'obtenen amb el símbol @Code "@Figure", que presenta les mateixes característiques que @Code "@Table". Aquests símbols provoquen que el que el segueix apareixi on s'hagi configurat. Per al fragment següent s'obté la figura @NumberOf plot .
+
+@ID @Code {
+"@Figure"
+"    @Caption { Presentació de plot.eps }"
+"    @Tag { plot }"
+"    @Location { Display }"
+"@IncludeGraphic plot.eps"
+}
+
+@Figure
+    @Caption { Presentació de @Code plot.eps }
+    @Tag { plot }
+    @Location { Display }
+@IncludeGraphic plot.eps
+
+@End @Section

@@ -1,0 +1,52 @@
+@SubSection
+    @Title { Definicions i símbols personalitzats }
+    @Tag { defis }
+@Begin
+
+@PP
+Lout ofereix la possibilitat de definir nous símbols. Les definicions s'han de redactar en un fitxer situat al mateix directori que el document base anomenat @Code { definicions }. Per tal que aquestes definicions dels símbols siguin accessibles a tot el document, s'ha d'incloure la línia @Code "@Include { definicions }" a sobre de la declaració del tipus de document @FootNote { Si es crea un fitxer de definicions anomenat @Code mydefs en comptes de @Code definicions no cal fer explícita la inclusió, Lout ja la fa automàticament. }.
+
+@PP
+Una vegada creat el fixer, podem definir símbols com els que es poden trobar a @cref @TitleOf { customequac } i altres. La definició d'un nou símbol segueix l'estructura que hi ha a sota (extret de @cref @TitleOf { customequac }).
+
+@CD @Code { 
+"import @Eq # Importació dels símbols de @Eq per un ús dins de la funció"
+"def baselog left x right y # Nom de la funció i els paràmetres que pren"
+"{ p sub y log sub x p sub y } # Descripció de la funció, entre claudàtors"
+}
+
+Per crear un símbol que introdueix el nom complet de l'autor del document amb la invocació de @Code "@arnau" s'han d'afegir les següents línies al fitxer de definicions.
+
+@ID @Code { 
+"def @arnau"
+"{ Arnau Prat Gasull }"
+}
+
+El resultat obtingut és @arnau.
+
+@PP
+Per actuar sobre l'estètica s'han de fer accessibles les definicions bàsiques del Lout a la definició, com es mostra en el codi següent.
+
+@ID @Code { 
+"import @BasicSetup"
+"def @arnauSC"
+"{ @ShadowBox { Arnau @S { Prat Gasull } } }"
+}
+
+S'obté @arnauSC.
+
+@PP
+Evidentment també es pot actuar sobre un objecte. Amb el codi que hi ha a continuació podem modificar la paraula o paraules que segueixen el símbol, com @Code "@cref Paraula" amb resultat @cref Paraula o @Code "@cref { Text alterat }" amb resultat @cref { Text alterat }.
+
+@ID @Code { 
+"import @BasicSetup"
+"def @cref right x"
+"{ @I x }"
+}
+
+Noteu que quan el símbol el segueix un sol objecte els claudàtors són optatius.
+
+@PP
+També es podria haver modificat la paraula precedent: en comptes d'escriure @Code { right x }, s'hauria d'haver escrit @Code { left x }. Lout també contempla paràmetres optatius, però ja es situen fora de l'abast d'aquesta guia.
+
+@End @SubSection

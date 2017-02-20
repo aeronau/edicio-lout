@@ -1,0 +1,38 @@
+@Section
+	@Title { Declaració del tipus de document }
+@Begin
+
+@PP
+A l'hora de crear un text mitjançant Lout cal definir quin tipus de document es redactarà. Entre els tipus predefinits per l'eina, hi ha les següents classes:
+
+@BulletList
+	@ListItem { Document ordinari o @Code doc }
+	@ListItem { Informe o @Code report }
+	@ListItem { Llibre o @Code book }
+	@ListItem { Transparències o @Code slides }
+@EndList
+
+Pel fet que aquesta guia està orientada a la redacció de documents amb una gran quantitat d'informació, s'utilitzarà el tipus de document @Code report per descriure les característiques d'un fitxer processat per l'eina.
+
+@PP
+Per utilitzar una classe predeterminada s'ha d'emprar @Code "@SysInclude { classe }", on @Code classe és un fitxer que conté les definicions per al tipus de document i es troba a @Code "/usr/share/lout/include" o @Code "/home/usuari/lout.lib/include" @FootNote { El nom dels directoris pot canviar en funció de la instal·lació de Lout en el sistema. En el primer cas, s'ha utilitzat @Code { sudo apt install lout } amb Ubuntu 16.04 LTS (Xenial Xerus) , mentre que la segona ubicació és conseqüència de la compilació del codi font de l'eina i utilitzant la majoria de paràmetres per defecte. }. La declaració del tipus de document implicarà una estructura del document font particular. L'estructura del fitxer font per un informe ha de ser la que hom pot trobar a continuació, basada en els exemples de @Cite { $kingston1995lout.user }.
+
+@ID @Code {
+"@SysInclude { report }"
+"@Report"
+"    @Title { ... }"
+"    @Author { ... }"
+"    @Institution { ... }"
+"    @Abstract { ... }"
+"//"
+"@Section"
+"   @Title { ... }"
+"   @Begin"
+"   ..."
+"   @End"
+"@Section"
+}
+
+Si es vol definir un nou tipus de document @Code novaclasse, en comptes d'utilitzar @Code "@SysInclude { report }" cal utilitzar @Code "@Include { novaclasse }". El símbol @Code "@SysInclude { ... }" fa la cerca del fitxer especificat entre claudàtors a la carpeta @Code "/usr/share/lout/include", mentre que @Code "@Include { ... }" fa la cerca al directori de treball. També es pot especificar la ubicació del fitxer, utilitzant @Code "@Include { \"carpeta/...\" }" (pareu atenció a les cometes).
+
+@End @Section

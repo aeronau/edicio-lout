@@ -1,0 +1,74 @@
+@Section
+    @Title { Paràgrafs }
+@Begin
+
+@PP
+El text dels escrits s'organitza en paràgrafs, que són les estructures on es desenvolupen cada una de les idees del document. Lout permet obtenir diferents estils de paràgraf amb certa facilitat.
+
+@PP
+A diferència de @LaTeX els paràgrafs no s'obtenen deixant una línia nova al fitxer font, sinó que s'ha d'escriure l'identificador del paràgraf en el punt on es vol començar el  paràgraf. Per cada tipus de paràgraf existeix un identificador, l'efecte del qual es propagarà en tot el text present entre aquest i el pròxim identificador. Mai caldrà afegir l'identificador darrere d'estructures com llistes o figures, doncs s'entén que aquests formen part del text i ja produeixen els espais necessaris al fitxer de sortida. 
+
+@PP
+En la majoria de casos, per començar un paràgraf només cal afegir @Code "@PP Dolor sit amet, consectetur..." per obtenir un nou paràgraf. Suposeu un informe constituït per diferents seccions. L'estructura d'una de les seccions podria ésser la que el lector pot trobar a continuació. Noteu que els identificador són @Code "@PP" i el seu àmbit d'efecte és obvi.
+
+@ID @Code {
+"@Section"
+"    @Title { Lorem ipsum }"
+"@Begin"
+"@PP"
+"Dolor sit amet, consectetur adipiscing elit. Nulla ac venen"
+"atis orci. Pellentesque accumsan dolor nec diam cursus aliq"
+"uam. Nunc."
+""
+"@PP"
+"Curabitur sit amet faucibus lorem. Duis ultrices mauris vel"
+"dui egestas, at tincidunt arcu egestas. Proin a lacus lacin"
+"ia, sagittis."
+""
+"@PP"
+"Ut auctor a tellus in porta. Nullam imperdiet sollicitudin "
+"erat. Suspendisse lacinia at sem consectetur sagittis. Pell"
+"entesque fermentum ipsum nec."
+"@End @Section"
+}
+
+Diferents identificadors, altrament anomenats símbols, permeten obtenir diferents tipus de paràgrafs. A sota hi trobareu un conjunt de símbols que us poden ésser útils.
+
+@BL
+@ListItem { Per un paràgraf que produeixi el mateix efecte que @Code "@PP" però que no tingui indentació cal utilitzar @Code "@LP". }
+@ListItem { Per remarcar la importància d'un paràgraf, cal utilitzar @Code "@DP". Aquest símbol defineix un paràgraf amb més espai vertical que els altres tipus. }
+@EndList
+
+Per modificar la posició del text en casos puntuals podem utilitzar el conjunt de símbols @Code "@Display". Amb aquest símbol es poden obtenir resultats com el que hi ha a continuació:
+@D { Text a destacar. }
+Els símbols disponibes són @Code "@Display", @Code "@LeftDisplay", @Code "@IndentedDisplay", @Code "@QuotedDisplay", @Code "@CenteredDisplay" o @Code "@RightDisplay". Tots aquests símbols menys l'últim es poden simplificar amb @Code "@D", @Code "@LD", @Code "@ID", @Code "@QD" i @Code "@CD" respectivament. Tingueu en compte que es poden definir nous símbols com a abreviacions en cas que fos necessari. 
+
+@PP
+Per obtenir tot tipus de llista s'ha de repetir el patró següent:
+@ID @Code {
+"@List"
+"@ListItem { Cotxe }"
+"@ListItem { Avió }"
+"@EndList"
+}
+Amb el codi anterior s'obté el resultat mostrat:
+@L
+@ListItem { Cotxe }
+@ListItem { Avió }
+@EndList
+Com abans, també existeixen múltiples símbols amb les corresponents abreviacions per a les llistes. Entre les disponibles, destaquem @Code "@List" o @Code "@L", @Code "@CenteredList" o @Code "@CL" i @Code "@BulletList" o @Code "@BL". S'obtenen subllistes incloent el patró anterior en un @Code "@ListItem", afegint @Code Raw o @Code R entre @Code "@" i el tipus de llista @FootNote { Així, obtnidrem @Code "@RawList". } @FootNote { Si hem usat abreviacions utilitzarem @Code R menys per a @Code "@L". }, com es mostra a @Cite { $kingston1995lout.user, pàgina 33 }. En els casos que es vulgui enumerar diferents paràgrafs s'ha d'utilitzar @Code "@ParagraphItem".
+
+@PP
+Si s'utilitza @Code "@TaggedList" o @Code "@TL" ja no es pot utilitzar @Code "@ListItem", sinó que s'ha d'utilitzar @Code "@TagItem { etiqueta } { descripció }". Fent els canvis indicats es podran obtenir resultats com els mostrats:
+@WTL
+@TagItem { Cotxe } { Vehicle amb motor de quatre rodes. }
+@TagItem { Avió } { Aeronau, més pesant que l'aire, capaç de volar per l'atmosfera. }
+@EndList
+En aquest cas hem utilitzat @Code "@WideTaggedList" o @Code "@WTL" en comptes de @Code "@TaggedList" o @Code "@TL" per obtenir més espai entre l'etiqueta i la descripció. També hi ha la opció @Code "@VeryWideTaggedList" o @Code "@VWTL" per aconseguir encara més espai.
+
+@PP
+Una nota al peu @FootNote { Com aquesta} s'obté amb @Code "@FootNote { Com aquesta. }". Hi ha múltiples opcions per configurar tant la posició com el símbol, però queden fora de l'abast de la guia.
+
+A la guia @Cite { $kingston1995lout.user } s'exposen les configuracions disponibles pels símbols anteriors i apareixen nous símbols que poden ser d'especial interés.
+
+@End @Section

@@ -1,0 +1,25 @@
+@Section
+    @Title { Recursos i informació }
+@Begin
+
+@PP
+A @Cite { $kingston1995lout.user }, trobareu citat el recurs al qual ha de recórrer un usuari de Lout quan li apareix un problema. La quantitat d'informació exposada i la qualitat de la redacció converteix el document citat en la millor guia de l'eina per l'usuari. Per a usuaris més avançats, el mateix autor del programa ha publicat @Cite { $kingston1995lout.expert }, que permet conèixer símbols que són presents en nivells més baixos.
+
+@PP
+Aquesta guia exposa els diferents passos que ha de seguir un usuari des de la creació d'un fitxer en blanc fins a obtenir el document preparat per publicar. Un usuari novell pot tractar la guia com un tutorial o introducció a l'eina Lout.
+
+@BeginSubSections
+@SubSection
+    @Title { Programari }
+@Begin
+
+@PP
+Lout pot ser usat tant en Ubuntu (i altres distribucions Linux) com en Windows. La descàrrega de Lout per a Windows es pot fer a través de Sourceforge @FootNote { A l'enllaç @Code @Verbatim { https://sourceforge.net/projects/lout/files/lout-win32/ } hi trobareu Lout compilat per a Microsoft Windows. La carpeta @Code lout s'ha de posar al disc @Code @Verbatim { C:\ } de manera que @Code lout.exe és a @Code @Verbatim { C:\lout\bin }. }. També podeu compilar Lout perquè funcioni en aquesta plataforma, però això requereix més esforç, de la mateixa manera que si ho feu per Ubuntu. La manera més fàcil per obtenir Lout en aquesta última és fent-ho amb el gestor de paquets o @Code { sudo apt install lout }, però la versió proporcionada pels repositoris oficials del sistema podria no correspondre's amb la última versió estable del programari.
+
+@PP
+Per visualitzar els fitxers PostScript, es requereix un intèrpret d'aquest llenguatge, com per exemple Ghostscript. Mentre que al sistema operatiu Ubuntu podria ser que ja estigués instal·lat, a Windows caldrà que es realitzi l'instal·lació manualment. Podeu utilitzar els paràmetres predeterminats per fer la instal·lació. A la secció @cref @TitleOf compi hi trobareu més informació relacionada.
+
+@End @SubSection
+@EndSubSections
+
+@End @Section

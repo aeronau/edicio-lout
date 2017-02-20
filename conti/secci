@@ -1,0 +1,63 @@
+@Section
+	@Title { Seccions i subseccions }
+@Begin
+
+@PP
+Quan s'escriu un informe mitjançant les definicions de @Code report, l'estructura de les seccions no necessiten ser incloses entre els símbols @Code "@BeginSections" i @Code "@EndSections". S'anomena símbol a tot aquell element que vingui descrit amb @Code "@" immediatament seguit de text, com per exemple @Code "@PP", un símbol que permet definir un nou paràgraf.
+
+@ID @Code {
+"..."
+"@Report"
+"..."
+"//"
+"@Section"
+"    @Title { Lorem ipsum }"
+"@Begin"
+"@PP"
+"..."
+"@End @Section"
+"# Nova secció"
+"@Section"
+"    @Title { Dolor sit amet }"
+"@Begin"
+"@PP"
+"..."
+"@End @Section"
+}
+
+Per documents que no utilitzin @Code report, cal utilitzar els símbols @Code "@BeginSections" i @Code "@EndSections" per obtenir seccions correctament, tal i com es mostra a continuació.
+ 
+@ID @Code {
+"@BeginSections"
+"   @Section"
+"       @Title { Dolor sit amet }"
+"   @Begin"
+"   @PP"
+"   ..."
+"   @End @Section"
+"   # Es poden afegir més seccions"
+"@EndSections"
+}
+
+Per definir subseccions a l'informe o a qualsevol altre tipus de document, cal emprar la sintaxi ordinària. Les subseccions hauran de definirse entre @Code "@BeginSubSections" i @Code "@EndSubSections", aquestes situades dins de la secció, tal i com es mostra. D'una manera similar, @Code "@SubSubSection" s'ha de situar entre @Code "@BeginSubSubSections" i @Code "@EndSubSubSections", que al seu torn es troba dins de la subsecció.
+
+@ID @Code {
+"@Section"
+"    @Title { Lorem ipsum }"
+"@Begin"
+"   @BeginSubSections"
+"       @SubSection"
+"           @Title { Dolor sit amet }"
+"       @Begin"
+"       @PP"
+"       ..."
+"       @End @SubSection"
+"      # Es poden afegir més subseccions"
+"   @EndSubSections"
+"@End @Section"
+"# Es poden afegir més seccions"
+}
+
+Tal i com succeeix amb les seccions, els apèndixs d'un informe no s'han d'incloure entre de @Code "@BeginAppendices" i @Code "@EndAppendices", però sí que s'han de tenir en compte a l'hora de definir @Code "@SubAppendix". En qualsevol altre tipus de document, el símbol anomenat s'ha de tenir en compte.
+
+@End @Section

@@ -1,0 +1,106 @@
+@Section
+    @Title { Matemàtiques i equacions }
+@Begin
+
+@PP
+La representació de símbols matemàtics es pot aconseguir afegint @Code "@SysInclude { eq }" al principi del document. Certs caràcters matemàtics i expressions es podrien obtenir sense l'addició d'aquesta línia, però expressions matemàtiques més complexes la requereixen.
+
+@PP
+Les expressions matemàtiques en línia com @E { 2+2=5 } s'obtenen amb @Code "@E { 2+2=5 }". @Code "@E { ...}" és una variant de @Code "@Eq { ... }", el símbol per defecte per expressions matemàtiques, que evita que una expressió matemàtica pugui separar-se en dos línies. Per altra banda, les expressions a línia completa (@eng { display equations }, en anglès) com @CD @Eq { 2+2=5 } o @ID @Eq { 2+2=5 } s'obtenen amb @Code "@CD @Eq { 2+2=5 }" o @Code "@ID @Eq { 2+2=5 }" respectivament.
+
+@PP
+Per enumerar les equacions podem utilitzar @Code "@NumberedDisplay @Eq { 2+2=5 } " o l'expressió abreviada corresponent, @Code "@ND @Eq { 2+2=5 }" per obtenir l'equació desitjada.
+
+@ND
+    @Tag { dosdoscinc }
+@Eq { 2+2=5 }
+
+Les equacions es poden referenciar amb el símbol @Code "@Tag { dosdoscinc }" i es pot obtenir el número de l'equació mitjançant @Code "@NumberOf { dosdoscinc }", com es pot apreciar en el cas de l'equació @NumberOf { dosdoscinc }.
+
+@ID @Code {
+"@ND"
+"    @Tag { dosdoscinc }"
+"@Eq { 2+2=5 }"
+}
+
+Per conèixer els símbols per crear les expressions consulteu @Cite { $kingston1995lout.user, pàgina 156 }.
+
+@BeginSubSections
+@SubSection
+    @Title { Matrius }
+@Begin
+
+@PP
+La sintaxi per crear matrius a Lout podria semblar poc intuitiva. A continuació es mostra el codi font i la matriu resultant.
+
+@CD { @Code {
+"@Eq{ pmatrix { row col a col b col c"
+"               row col d col e col f"
+"               row col g col h col i } }"
+}
+|2c
+@Eq{
+pmatrix
+userow { yes }
+{
+axisrow col a col b col c
+row col d col e col f
+row col g col h col i 
+}
+}
+}
+
+Múltiples matrius adjuntes poden fer evidents diferències entre elles, com es mostra. Noteu que l'altura de les matrius és diferent.
+
+@CD @Eq{
+pmatrix{
+row col a col b col c
+row col d col e col f
+row col g col h col i 
+}
+pmatrix{
+row col j col k col l
+row col m col n col o
+row col p col q col r 
+}
+}
+
+Afegint  @Code "strut { yes }" entre @Code pmatrix i el primer claudàtor de cada una de les matrius, s'obté un resultat millor.
+
+@CD @Eq{
+pmatrix
+    strut { yes } {
+row col a col b col c
+row col d col e col f
+row col g col h col i 
+}
+pmatrix
+    strut { yes } {
+row col j col k col l
+row col m col n col o
+row col p col q col r 
+}
+}
+
+@End @SubSection
+
+@SubSection
+    @Title { Símbols matemàtics personalitzats }
+    @Tag { customequac }
+@Begin
+
+@PP
+Quan hi ha una expressió que apareix en multitud d'ocasions resulta convenient disposar d'un símbol que la representi cada vegada que s'invoqui. Seguint les explicacions de la secció @cref @TitleOf { defis }, podem definir aquest tipus símbols. A @Cite { $kingston1995lout.user, pàgina 155 } s'hi exposa un exemple similar al que trobareu a continuació.
+
+@CD @Code {
+"import @Eq # Importació dels símbols de @Eq per un ús dins de la funció"
+"def baselog left x right y # Nom de la funció i els paràmetres que pren"
+"{ p sub y log sub x p sub y } # Descripció de la funció, entre claudàtors"
+}
+
+Aquesta expressió permetrà escriure @E { 2 baselog i + 3 baselog j + 4 baselog k } fàcilment mitjançant @Code "@E { 2 baselog i + 3 baselog j + 4 baselog k }". Cal dir que @Code "baselog" només es renderitzarà correctament dins de l'entorn @Code "@Eq { ... }". Si emprem el símbol @Code "baselog" fora d'aquest entorn @FootNote { Com que @Code "baselog" és un símbol a tot el document, no es pot restringir el seu ús només a l'àmbit que li correspondria, de manera que fora de l'àmbit pel qual ha estat pensada es pot utilitzar però s'obtindrà un resultat diferent. }, com @Code "2 baselog i" directament, es renderitzarà com { 2 baselog i }, que no és el resultat que busquem.
+
+@End @SubSection
+@EndSubSections
+
+@End @Section

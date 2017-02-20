@@ -1,0 +1,120 @@
+@SysInclude{doc}
+@SysInclude{eq}
+@SysInclude{tbl}
+@Document
+	@InitialFont{Times Base 11p}
+	@PageHeaders{Simple}
+	@ColumnNumber{1}
+	@InitialLanguage{English}
+//
+@Text @Begin
+
+	@CD cragged @Break
+{Arnau Prat Gasull
+@LLP {Novembre de 2015} 
+@LLP @F {G2.3 @Char bullet GREVA @Char bullet ETSEIAT}}
+
+	@D
+@Heading{Resolució}
+	
+	@D
+@Box{Aquesta resolució ha estat realitzada ràpidament, podria ser que hi haguessin errors}
+
+@ID{Caracterització de tots els punts}
+
+Per trobar la pressió en els punts 3 i 4 cal que apliquem
+	@D
+@Eq{T sub i {P sub i} sup {{1-gamma} over gamma}=@R constant}
+
+de manera que
+
+	@ID
+@Eq{T sub 2 {P sub 2} sup {{1-1.4} over 1.4}=T sub 3 {P sub 3} sup {{1-1.4} over 1.4}}
+	@ID
+@Eq{T sub 1 {P sub 1} sup {{1-1.4} over 1.4}=T sub 4 {P sub 4} sup {{1-1.4} over 1.4}}
+
+i @Eq{P sub 3 = 45.254834 space @R Pa} i @Eq{P sub 4 = 22.627417 space @R Pa}
+
+Per trobar el treball de les diferents fases hem d'aplicar
+
+	@D
+@Eq{n = m over M}
+
+	@D
+@Eq{W sub @R{isotèrmic} = nRT sub i ln {{P sub {i+1}}over P sub i}}
+	@D
+@Eq{W sub @R{adiabàtic} = {P sub {i+1} V sub {i+1} - P sub i V sub i} over {1-gamma} }
+
+de manera que per als processos isotèrmics
+	
+	@ID
+@Eq{W sub {1 arrowright 2}=nRT sub 1 ln {{P sub 2}over P sub 1}}
+	@ID
+@Eq{W sub {3 arrowright 4}=nRT sub 3 ln {{P sub 4}over P sub 3}}
+
+i per als processos adiabàtics
+	
+	@ID
+@Eq{W sub {2 arrowright 3} = {P sub 3 V sub 3 - P sub 2 V sub 2} over {1-1.4}}
+	@ID
+@Eq{W sub {4 arrowright 1} = {P sub 1 V sub 1 - P sub 4 V sub 4} over {1-1.4}}
+
+La calor donada serà
+	
+	@ID
+@Eq{Q sub {1 arrowright 2} = - W sub {1 arrowright 2} = -7203.941031 space @R J}
+
+La calor absorbida serà
+	
+	@ID
+@Eq{Q sub {3 arrowright 4} = - W sub {3 arrowright 4} = 14407.88206 space @R J}
+
+amb un rendiment de
+ 
+	@D
+@Eq{eta = W sub {@R net} over Q sub {@R absorbida} = {W sub {1 arrowright 2} + W sub {2 arrowright 3} + W sub {3 arrowright 4} + W sub {4 arrowright 1}} over {Q sub {3 arrowright 4}} = {W sub {1 arrowright 2} + W sub {3 arrowright 4}} over {Q sub {3 arrowright 4}}}
+
+	@ID{amb @Eq{W sub {2 arrowright 3} = - W sub {4 arrowright 1}} perquè operen en les mateixes temperatures}
+
+i així
+
+	@ID
+@Eq{eta = {14407.88206-7203.941031} over 14407.88206 = 0.5}
+
+Per acabar d'emplenar la taula és necessari trobar (treballant en valors absoluts)
+	
+	@ID
+@Eq{Q sub {1 arrowright 2} over T sub 1 = 7203.941031 over 400 = 18 space @R{J frac K}}
+	@ID
+@Eq{Q sub {3 arrowright 4} over T sub 4 = 14407.88206 over 800 = 18 space @R{J frac K}}
+
+@Tbl
+aformat{ @Cell indentvertical{align} @I A | @Cell indentvertical {align} @I B | @Cell indentvertical {align} @I C | @Cell indentvertical {align} @I D | @Cell indentvertical {align} @I E | @Cell indentvertical {align} @I F | @Cell indentvertical {align} @I G | @Cell indentvertical {align} @I H | @Cell indentvertical {align} @I I }
+bformat{ @Cell indent{ctr} A | @Cell indent{ctr} B | @Cell indent{ctr} C | @Cell indent{ctr} D | @Cell indent{ctr} E | @Cell indent{ctr} F | @Cell indent{ctr} G | @Cell indent{ctr} H | @Cell indent{ctr} I }
+{
+@Rowa
+A{M @Eq{bmatrix{@R{g frac mol}}}}
+B{@Eq{gamma space bmatrix{@R{g frac mol}}}}
+C{@Eq{P sub 1 space bmatrix{@R Pa}}}
+D{@Eq{P sub 2 space bmatrix{@R Pa}}}
+E{@Eq{T sub 1 = T sub 2 space bmatrix{@R K}}}
+F{@Eq{T sub 3 = T sub 4 space bmatrix{@R K}}}
+G{@Eq{Q sub {1 arrowright 2} over T sub 1 space bmatrix{@R{J frac K}}}}
+H{@Eq{Q sub {3 arrowright 4} over T sub 4 space bmatrix{@R{J frac K}}}}
+I{@Eq{eta}}
+
+@Rowb
+ruleabove{yes}
+A{32}
+B{1.4}
+C{2}
+D{4}
+E{400}
+F{800}
+G{18}
+H{18}
+I{0.5}
+
+}
+
+@End @Text

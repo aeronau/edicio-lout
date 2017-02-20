@@ -1,0 +1,36 @@
+# Composició de textos mitjançant Lout
+# Arnau Prat Gasull
+
+@Include { "estil/classe" }
+@SysInclude { eq }
+@SysInclude { tbl }
+@SysInclude { diag }
+@SysInclude { graph }
+@SysInclude { pie }
+@Include { mydefs }
+@Report
+	@Title { Composició de textos mitjançant Lout }
+	@Author { Arnau Prat Gasull }
+	@Institution { lout-users }
+	@DateLine { Agost de 2016 }
+	@Abstract { En aquesta introducció a l'eina d'edició de textos Lout s'hi exposa el tractament adequat per obtenir un document extens, comprès d'un gran nombre de seccions i fitxers. Es tracta d'una referència simplificada per usuaris de Lout. }
+//                         # Beautified?
+@Include { "conti/infor" } # Okt
+@Include { "conti/codif" } # Okt
+@Include { "conti/simbo" } # Okt
+@Include { "conti/docti" } # Okt
+@Include { "conti/secci" } # Okt
+@Include { "conti/parag" } # Okt
+@Include { "conti/refli" } # Okt
+@Include { "conti/equac" } # OKt
+@Include { "conti/grafs" } # Not
+@Include { "conti/taula" } # Ok
+@Include { "conti/compi" } # Okt
+@Section
+    @Title { Característiques avançades }
+@Begin
+@BeginSubSections
+@Include { "conti/defis" } #Okt
+@Include { "conti/fonts" } #Okt
+@EndSubSections
+@End @Section

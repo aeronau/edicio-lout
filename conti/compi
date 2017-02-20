@@ -1,0 +1,30 @@
+@Section
+	@Title { Compilació del document }
+    @Tag { compi }
+@Begin
+
+@PP
+Per obtenir un document preparat per imprimir cal executar @Code { lout -o output.ps input } on @Code output.ps és un fitxer PostScript i @Code input és el fitxer font. Per visualitzar el fitxer Postscript ps @Index PostScript és necessari el programari adequat, com per exemple Ghostscript gs @Index Ghostscript @FootNote { A Ubuntu Xenial Xerus ja hi és present, mentre que a Microsoft Windows s'ha d'instal·lar per compte propi. Una vegada instal·lat Ghostscript en aquest sistema operatiu, podeu instal·lar SumatraPDF, que facilita la manipulació del fitxer, com per exemple la conversió a PDF. }. Lout també pot crear fitxers PDF pdf @Index PDF mitjançant @Code { lout -Z -o output.pdf input }. Es recomana crear un fitxer PostScript i convertir-lo a PDF, ja que durant la creació directa d'un fitxer PDF algunes característiques de Lout no són renderitzades correctament. Vegeu @TitleOf { ps2pdf } per l'explicació de mètodes de conversió. Com diu a @Cite { $kingston1995lout.user, pàgina 91 }, per generar un fitxer PostScript tampoc no hauriem d'utilitzar mai @Code -EPS @FootNote { Un fitxer EPS (@eng { Encapsulated PostScript }) només està constituït per una pàgina, de manera que l'execució de @Code lout amb @Code -EPS produirà un fitxer amb @emph només la primera pàgina, denotat al terminal com a @Code { fatal error: truncating -EPS document at end of first page }. }.
+
+@PP
+Un document mitjanament complex requerirà més d'una execució de Lout per obtenir el fitxer desitjat. Aquestes múltiples execucions permeten solucionar les referències creuades @FootNote { Apareixen com a @Code { línia,columna: unresolved cross reference @NumberMarker&&9.1591.conti"/"compi.1 } al terminal quan no han sigut solucionades. }, índexs i bases de dades. En comptes d'executar l'eina múltiples vegades manualment, també podem executar @Code { lout -r2 -o output.ps input }. @Code -r2 indica que es faran dues passades (de l'anglès, @I r de @eng run) i @Code -r4, que  s'en faran quatre. Això és útil per documents complexos que requereixen múltiples passades.
+
+@PP
+En algunes ocasions, Lout no aconsegueix resoldre el fitxer font encara que hagim rectificat els possibles errors que hi puguin haver. En casos on la sintaxi és correcta però l'eina retorna error, un dels problemes més comuns és que els fitxers d'altres execucions encara es mantenen. Per tal que Lout torni a crear tots aquests fitxers haurem d'esborrar manualment aquells que acaben amb @Code .li, @Code .lix i altres que no ens resulten familiars. Una vegada esborrats, l'execució hauria de ser fluida i no retornar cap error.
+
+@BeginSubSections
+@SubSection
+    @Title { Conversió d'un fitxer PostScript a PDF }
+    @Tag { ps2pdf }
+@Begin
+
+@PP
+Un mètode fàcil per convertir un fitxer PostScript a PDF és utilitzant l'eina ps2pdf, que funciona al terminal. Per obtenir el fitxer @Code .pdf només cal que obriu el terminal i executeu @Code { ps2pdf input.ps output.pdf }, on @Code input i @Code output són els noms dels fitxers. El fitxer @Code .pdf apareixerà al mateix directori que el fitxer @Code { .ps }.
+
+@PP
+Si utilitzeu el visualitzador SumatraPDF per veure els fitxers @Code .ps @FootNote { Per fer-ho, heu d'instal·lar Ghostscript anteriorment. } podeu utilitzar l'element del menú @MenuEle File @Sym arrowright @MenuEle { Save As... } i escollir el tipus de fitxer en el menú d'opcions, entre les quals hi ha PDF.
+
+@End @SubSection
+@EndSubSections
+
+@End @Section

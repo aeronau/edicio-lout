@@ -1,0 +1,9 @@
+@Section
+    @Title { L'estructura de Lout{ @Char emdash }objectes i símbols }
+    @Tag { simbo }
+@Begin
+
+@PP
+Lout treballa essencialment amb @emph { objectes } obj @Index { Objecte }, que poden ser caràcters, paraules, paràgrafs, pàgines... Aquests objectes poden ser modificats per @emph { símbols } sym @Index { Símbols }, una de les múltiples funcions que poden tenir. Els símbols s'obtenen mitjançant definicions (vegeu @cref @TitleOf { defis }), de manera que un usuari mitjanament avançat pot crear-ne de nous. Els símbols acostumen a presentar la forma @Code "@HMirror MIRALL", que produeix @HMirror { MIRALL }, o bé @Code "30d @Rotate { Hola, món }", que produeix el resultat 30d @Rotate { Hola, món }. Noteu que els símbols s'escriuen amb @Code "@"{ @Char emdash }tot i que n'hi poden haver sense{ @Char emdash }i poden prendre una o dos variables a la dreta i"/"o a l'esquerra. Alguns símbols, com @Code "@Section" presenten variables opcionals. A la secció especialitzada hi trobareu més informació.
+
+@End @Section

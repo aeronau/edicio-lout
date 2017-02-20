@@ -1,0 +1,30 @@
+@Section
+    @Title { Referències creuades i enllaços }
+    @Tag { refli }
+@Begin
+
+@PP
+Per fer referència a alguna part del text, com per exemple a la secció @cref @TitleOf { refli } de la pàgina @NumberOf { refli }, podem emprar els símbols @Code "@TitleOf { etiqueta }" o @Code "@NumberOf { etiqueta }", on l'etiqueta és característica de la part a referenciar.
+
+@PP
+Les etiquetes poden definir-se dins de qualsevol text amb @PageMark { referencia.a } @Code "@PageMark referencia.a". Aquest símbol permet referenciar la pàgina sense haver d'escriure el número directament. El número es pot recuperar amb @Code "@PageOf referencia.a", que produeix @PageOf { referencia.a }.
+
+@PP
+Ara bé, si en comptes de pàgines volem fer referència a capítols, seccions, peus de pàgina, elements de llista, figures o taules, podem utilitzar la opció @Code "@Tag { etiqueta }" que proporcionen. Prenent com a exemple una secció @FootNote { El patró que es mostra també funciona per tots els símbols que fan referència als elements exposats. }, tenim el següent:
+@ID @Code {
+"@Section"
+"    @Title { Títol de la secció }"
+"    @Tag { referencia.b }"
+"@Begin"
+"@PP"
+"..."
+}
+Podem recuperar el número de la secció amb @Code "@NumberOf { referencia.b }". En el cas dels símbols que presenten l'opció @Code "@Title { ... }", com capítols i seccions, també podem recuperar el títol amb  @Code "@TitleOf { referencia.b }".
+
+@PP
+Les referències creuades requereixen tractar el fitxer múltiples vegades, doncs amb una execució de @Code lout no es resolen les etiquetes. L'autor utilitza @Code { lout -r2 -o 0.ps 0 } per obtenir una versió PostScript del document. A vegades, amb dues execucions (donades per @Code -r2) no és suficient. Llavors cal canviar el valor exposat.
+
+@PP
+Per utilitzar adreçes URL en un document, el més recomanable és utilizar @Code "http://savannah.nongnu.org/projects/lout @ExternalLink { Lout - Summary }", que produeix "http://savannah.nongnu.org/projects/lout" @ExternalLink { Lout - Summary }. Lout també ofereix enllaços interns mitjançant l'ús d'etiquetes, que podeu consultar a la guia de l'autor de Lout.
+
+@End @Section

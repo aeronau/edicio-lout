@@ -1,0 +1,38 @@
+def @TeX
+{ @OneCol { T &0.4fo {-0.2f @VShift E} &0.45fo X }
+}
+
+def @LaTeX
+{ @OneCol { L &0.3fo { +0.1f @VShift 0.8f @Font A } &0.4fo @TeX }
+}
+
+import @BasicSetup
+def @eng right x
+{ @I x }
+
+import @BasicSetup
+def @emph right x
+{ @Underline x }
+
+import @BasicSetup
+def @cref right x
+{ @I x }
+
+import @BasicSetup
+def @Code right x
+{ { Courier Bold 10p } @Font { lines @Break x } }
+
+import @BasicSetup
+def @MenuEle right x
+{ @Box { @VStrut { Courier Bold 10p } @Font { lines @Break x } } }
+
+def @arnau
+{ Arnau Prat Gasull }
+
+import @BasicSetup
+def @arnauSC
+{ @ShadowBox { Arnau @S { Prat Gasull } } }
+
+import @Eq
+def baselog left x right y
+{ p sub y log sub x p sub y }

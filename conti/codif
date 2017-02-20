@@ -1,0 +1,8 @@
+@Section
+	@Title { Codificació del document }
+@Begin
+
+@PP
+Lout no treballa amb codificació Unicode (UTF), fet que pot causar problemes inicialment amb alguns caràcters, com per exemple els accentuats, els que presenten dièresis, la @I ç i la @I l·l presents en el català. Per utilitzar l'eina en aquesta llengua, cal guardar el fitxer amb la codificació @FootNote { L'opció de codificació acostuma a trobar-se a la finestra que apareix quan s'anomena i desa el fitxer des de l'editor. } ISO-8859-1 @FootNote { ISO-LATIN-1 o @eng Western, alternativament. }. Altres codificacions queden fora de l'àmbit d'aquesta guia, però també poden ser utilitzades amb Lout @FootNote { Hi ha caràcters que no estan definits a la norma ISO-8859-1, com @Euro, que s'han de definir mitjançant @Code "@Euro". }.
+
+@End @Section
