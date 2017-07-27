@@ -1,5 +1,5 @@
 # ediciolout
 
-Aquest és un document on s'introdueix la creació de documents amb [Lout](http://savannah.nongnu.org/projects/lout/). L'objectiu d'aquesta guia és que un usuari sense experiència pugui crear un informe estructurat amb tots els elements propis d'un document com aquest.
+In this guide the creation of documents using [Lout](http://savannah.nongnu.org/projects/lout/) is introduced. The aim of this project is to help an unexperienced user produce a structured report with all the elements typically found in this kind of documents. 
 
-Per compilar aquest document s'ha utilitzat `lout -r2 -o 0.ps 0`.
+In order to compile this document the command `lout -r2 -o 0.ps 0` has been used.
