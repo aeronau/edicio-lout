@@ -233,23 +233,6 @@
 
 {@@E {
 { @@A { @@E {
-@@D "77 6"
-}
-{@@V @FootNoteCounterIncrement "9.1591.conti/grafs.1"} } }
-}
-{@@V @FootNoteCounterMarker
-  \a{"9.1565.conti/grafs.1"}
-  \b{@@V @FootNoteNum "9.1591.conti/grafs.1"}}}
-
-{@@E {
-@@D "3330 234"
-}
-{@NumberMarker
-  \a{"9.1591.conti/grafs.1"}
-  \b{Arabic @@V @Num {@@V @FootNoteNum "9.1591.conti/grafs.1"}}}}
-
-{@@E {
-{ @@A { @@E {
 { @@A { @@E {
 @@D "2363 155"
 }
@@ -260,11 +243,45 @@
 {{} @@V @SendRef @@V tag}}
 
 {@@E {
+{ @@A { @@E {
+@@D "77 6"
+}
+{@@V @FootNoteCounterIncrement "9.1591.conti/grafs.1"} } }
+}
+{@@V @FootNoteCounterMarker
+  \a{"9.1565.conti/grafs.1"}
+  \b{@@V @FootNoteNum "9.1591.conti/grafs.1"}}}
+
+{@@E {
+@@D "3468 245"
+}
+{@NumberMarker
+  \a{"9.1591.conti/grafs.1"}
+  \b{Arabic @@V @Num {@@V @FootNoteNum "9.1591.conti/grafs.1"}}}}
+
+{@@E {
 @@D "2363 155"
 }
 {@FootNote
   \a{"9.1591.conti/grafs.2"}
 {Si l'eina utilitzada per produïr l'il·lustració no exporta a EPS, caldrà utilitzar algun conversor o encapsulador per tal que Lout pugui utilitzar fitxers amb altres extensions.}}}
+
+{@@E {
+{ @@A { @@E {
+@@D "77 6"
+}
+{@@V @FootNoteCounterIncrement "9.1591.conti/grafs.2"} } }
+}
+{@@V @FootNoteCounterMarker
+  \a{"9.1565.conti/grafs.2"}
+  \b{@@V @FootNoteNum "9.1591.conti/grafs.2"}}}
+
+{@@E {
+@@D "4051 269"
+}
+{@NumberMarker
+  \a{"9.1591.conti/grafs.2"}
+  \b{Arabic @@V @Num {@@V @FootNoteNum "9.1591.conti/grafs.2"}}}}
 
 {@@E {
 @@D "2363 155"
@@ -286,7 +303,7 @@
   \b{@@V @RawFigureNum plot}}}
 
 {@@E {
-@@D "4154 278"
+@@D "4490 295"
 }
 {@NumberMarker
   \a{plot}
@@ -381,7 +398,7 @@
  }
 {@@E {
 { @@A { @@E {
-@@D "4782 318"
+@@D "5118 335"
 }
 {{??} @@V @Do {??}} } }
 }
@@ -404,23 +421,6 @@
   \d{@MinorTitle}
   \e{"10.694.conti/grafs.1"}
   \f{@Prefix}}}
-
-{@@E {
-{ @@A { @@E {
-@@D "77 6"
-}
-{@@V @FootNoteCounterIncrement "9.1591.conti/grafs.2"} } }
-}
-{@@V @FootNoteCounterMarker
-  \a{"9.1565.conti/grafs.2"}
-  \b{@@V @FootNoteNum "9.1591.conti/grafs.2"}}}
-
-{@@E {
-@@D "6232 408"
-}
-{@NumberMarker
-  \a{"9.1591.conti/grafs.2"}
-  \b{Arabic @@V @Num {@@V @FootNoteNum "9.1591.conti/grafs.2"}}}}
 
 {@@E {
 { @@B { { @@A { @@E {

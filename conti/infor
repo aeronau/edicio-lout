@@ -25,18 +25,30 @@ Lout, a diferència d'altres opcions per crear documents i informes, té les següe
 	@ListItem { S'ofereixen un gran nombre de plantilles per finalitats molt diverses. Plantilles per crear articles, presetacions i informes ja venen per defecte. }
 	@ListItem { El sistema permet automatització i és prou bo per documents de gran complexitat. }
 	@ListItem { Es garanteix la obtenció d'un fitxer PostScript o PDF d'un document creat mitjançant Lout d'aquí molts anys, mentre el programa Lout encara sigui compilable. }
+	@ListItem { Si no es produeixen gaires errors, utilitzar Lout és més productiu que utilitzar {@LaTeX}. }
 @EndList
 
-Tanmateix, té els "defectes" següents:
+Tanmateix, té els inconvenients següents:
 
 @BulletList
-	@ListItem { Tots els documents han d'estar codificats amb ISO-LATIN-1. }
+	@ListItem { Tots els documents han d'estar codificats amb ISO-LATIN-1 i no amb UTF. }
 	@ListItem { El sistema pot tenir problemes amb algunes llengües. }
 	@ListItem { Pocs usuaris utilitzen el sistema. }
 	@ListItem { Poca informació i recursos d'ajuda a la xarxa disponibles. }
 	@ListItem { Crear documents PDF de manera nativa ofereix pitjors resultats que crear-los a partir del fitxer PostScript obtingut prèviament amb el compilador. El document PostScript que es pot obtenir nativament és de bona qualitat, tanmateix. }
 	@ListItem { L'eina no presentarà actualitzacions per part de l'autor original a favor del nou projecte Nonpareil. }
 @EndList
+
+Per a molts usuaris els inconvenients guanyen als avantatges de manera que aquesta guia no té sentit. Si el lector creu que és interessant provar d'escriure un document amb aquest sistema peculiar, s'ha de dir que conèixer el paradigma i les "maneres de fer" és gratificant. Al final, el lector acaba amb la sensació que s'haurien de combinar els avantatges que ofereixen les diferents eines com @LaTeX i Lout per desenvolupar un sistema de creació de fitxers sublim i de referència.
+
+@Figure
+    @Caption { Per què s'hauria de crear un nou sistema de creació de documents? }
+    @Tag { standards }
+    @Location { Display }
+0.5 @Scale @IncludeGraphic standards.eps
+
+@PP
+L'autor va començar a utilitzar Lout en reflexionar com seria una alternativa vàlida i a l'altura de {@LaTeX}, i pot proporcionar una llista de sistemes alternatius a @TeX si el lector ho demana. S'ha de dir que Lout és la segona o tercera opció més consolidada, doncs no n'hi ha gaires de bones alternatives.
 
 @End @SubSection
 

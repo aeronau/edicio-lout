@@ -445,19 +445,15 @@
 {@@E {
 { @@A { @@E {
 { @@A { @@E {
-{ @@A { @@E {
-@@D "4264 278"
+@@D "4250 277"
 }
-{@RawList
-  \a{@Bullet}} } }
-}
-{@@V @MakeList 1} } }
+{@@V @MakeList 9} } }
 }
 {@@V @NormalItem} } }
 }
 {@NumberMarker
   \a{"4.1246.conti/infor.18"}
-  \b{@@V type 1}}}
+  \b{@@V type 9}}}
 
 {@@E {
 @@D "4264 278"
@@ -469,15 +465,19 @@
 {@@E {
 { @@A { @@E {
 { @@A { @@E {
-@@D "6308 447"
+{ @@A { @@E {
+@@D "4264 278"
 }
-{@@V @MakeList 2} } }
+{@RawList
+  \a{@Bullet}} } }
+}
+{@@V @MakeList 1} } }
 }
 {@@V @NormalItem} } }
 }
 {@NumberMarker
   \a{"4.1246.conti/infor.20"}
-  \b{@@V type 2}}}
+  \b{@@V type 1}}}
 
 {@@E {
 @@D "4264 278"
@@ -489,15 +489,15 @@
 {@@E {
 { @@A { @@E {
 { @@A { @@E {
-@@D "6308 447"
+@@D "6547 467"
 }
-{@@V @MakeList 3} } }
+{@@V @MakeList 2} } }
 }
 {@@V @NormalItem} } }
 }
 {@NumberMarker
   \a{"4.1246.conti/infor.22"}
-  \b{@@V type 3}}}
+  \b{@@V type 2}}}
 
 {@@E {
 @@D "4264 278"
@@ -509,15 +509,15 @@
 {@@E {
 { @@A { @@E {
 { @@A { @@E {
-@@D "6308 447"
+@@D "6547 467"
 }
-{@@V @MakeList 4} } }
+{@@V @MakeList 3} } }
 }
 {@@V @NormalItem} } }
 }
 {@NumberMarker
   \a{"4.1246.conti/infor.24"}
-  \b{@@V type 4}}}
+  \b{@@V type 3}}}
 
 {@@E {
 @@D "4264 278"
@@ -529,15 +529,15 @@
 {@@E {
 { @@A { @@E {
 { @@A { @@E {
-@@D "6308 447"
+@@D "6547 467"
 }
-{@@V @MakeList 5} } }
+{@@V @MakeList 4} } }
 }
 {@@V @NormalItem} } }
 }
 {@NumberMarker
   \a{"4.1246.conti/infor.26"}
-  \b{@@V type 5}}}
+  \b{@@V type 4}}}
 
 {@@E {
 @@D "4264 278"
@@ -549,15 +549,15 @@
 {@@E {
 { @@A { @@E {
 { @@A { @@E {
-@@D "6308 447"
+@@D "6547 467"
 }
-{@@V @MakeList 6} } }
+{@@V @MakeList 5} } }
 }
 {@@V @NormalItem} } }
 }
 {@NumberMarker
   \a{"4.1246.conti/infor.28"}
-  \b{@@V type 6}}}
+  \b{@@V type 5}}}
 
 {@@E {
 @@D "4264 278"
@@ -565,6 +565,165 @@
 {@@V listitem
   \a{"4.1794.conti/infor.14"}
 ???}}
+
+{@@E {
+{ @@A { @@E {
+{ @@A { @@E {
+@@D "6547 467"
+}
+{@@V @MakeList 6} } }
+}
+{@@V @NormalItem} } }
+}
+{@NumberMarker
+  \a{"4.1246.conti/infor.30"}
+  \b{@@V type 6}}}
+
+{@@E {
+@@D "4264 278"
+}
+{@@V listitem
+  \a{"4.1794.conti/infor.15"}
+???}}
+
+{@@E {
+@@D "4264 278"
+}
+{@Figure
+  \b{Per què s'hauria de crear un nou sistema de creació de documents?}
+  \a{standards}
+  \i{Display}
+???}}
+
+{@@E {
+{ @@A { @@E {
+@@D "77 6"
+}
+{@@V @FigureCounterIncrement standards} } }
+}
+{@@V @FigureCounterMarker
+  \a{"9.3785.conti/infor.1"}
+  \b{@@V @RawFigureNum standards}}}
+
+{@@E {
+@@D "8146 598"
+}
+{@NumberMarker
+  \a{standards}
+  \b{{{@@V @FigurePrefixMarker&&{@@V tag}} @Open {prefix}} @Join {Arabic @@V @Num {@@V @RawFigureNum standards}}}}}
+
+{@@E {
+{ @@A { @@E {
+{ @@A { @@E {
+@@D "4264 278"
+}
+{@Figure
+  \b{Per què s'hauria de crear un nou sistema de creació de documents?}
+  \a{standards}
+  \i{Display}
+{{0.5} @Scale {@IncludeGraphic {standards.eps}}}} } }
+}
+{@@V @FigureVal} } }
+}
+{@TitleMarker
+  \a{standards}
+  \b{@@V @Caption}}}
+
+{@@E {
+{ @@B { { @@A { @@E {
+@@D "77 6"
+}
+{@@V @DupRunner} } }
+ }
+{@@E {
+{ @@B { { @@A { @@E {
+{ @@A { @@E {
+{ @@A { @@E {
+{ @@A { @@E {
+{ @@A { @@E {
+{ @@A { @@E {
+{ @@A { @@E {
+{ @@A { @@E {
+{ @@A { @@E {
+{ @@A { @@E {
+{ @@A { @@E {
+@@C
+}
+{@LUse @BasicSetup} } }
+}
+{@LUse @DocumentSetup} } }
+}
+{@LUse @ReportSetup} } }
+}
+{@LUse @TblSetup} } }
+}
+{@LUse @DiagSetup} } }
+}
+{@LUse @GraphSetup} } }
+}
+{@LUse @PieSetup} } }
+}
+{@Section
+  \a{"10.694.conti/infor.1"}
+  \b{Recursos i informació}
+{ @LInput }} } }
+}
+{@@V @LargeScaleStructure
+  \a{"10.694.conti/infor.1"}
+  \b{Minor}
+  \c{}
+  \d{@@V @Title}
+  \e{dft}
+  \g{Bold}
+  \h{@@V @SectionHeadingBreak}
+  \i{@Num @@V @SectionHeadingFormat @Body}
+  \k{Yes}
+  \l{@@V @SectionContentsIndent}
+  \n{Arabic}
+  \o{{@@V @SectionList&&preceding} @Tagged @@V @Tag}
+  \p{{@@V @SectionList&&{@@V @Tag}} @Open {num}}
+  \q{dft}
+  \r{}
+  \t{}
+  \u{}
+  \x{No}
+  \y{Yes}
+  \z{No}
+  intables{No}
+  infloaters{No}
+  inrunners{Yes}
+  newpage{No}
+@@V @Body} } }
+}
+{@@V @Heading} } }
+}
+{@@V @Run @@V @StartIfMajor} } }
+ }
+{@@E {
+{ @@A { @@E {
+@@D "8858 638"
+}
+{{??} @@V @Do {??}} } }
+}
+{@@V y}} }
+}
+{@@V start @Runner
+  \g{"9.966.conti/infor.1"}
+  \a{{} @@V @Dft @@V @LongNum}
+  \b{{} @@V @Dft @@V @ShortTitle}
+  \c{dft @@V @Dft @@V @LongNum}
+  \d{dft @@V @Dft @@V @ShortTitle}
+  \e{"10.694.conti/infor.1"}
+  \f{{} @Join @@V @ShortNum}}} }
+}
+{NonStart @Runner
+  \g{"9.966.conti/infor.4"}
+  \a{@MajorNum}
+  \b{@MajorTitle}
+  \c{@MinorNum}
+  \d{@MinorTitle}
+  \e{"10.694.conti/infor.1"}
+  \f{@Prefix}}}
 
 {@@E {
 @@D "63 5"
@@ -620,7 +779,7 @@
  }
 {@@E {
 { @@A { @@E {
-@@D "7941 584"
+@@D "10489 743"
 }
 {?? @@V @Do ??} } }
 }
@@ -633,7 +792,7 @@
 {@@E {
 { @@A { @@E {
 { @@A { @@E {
-@@D "7941 584"
+@@D "10489 743"
 }
 {@@V @ContentsStuff} } }
 }
@@ -684,7 +843,7 @@ C:\lout\bin @End @Verbatim}.}}}
  }
 {@@E {
 { @@A { @@E {
-@@D "9749 676"
+@@D "12299 835"
 }
 {?? @@V @Do ??} } }
 }
@@ -710,7 +869,7 @@ C:\lout\bin @End @Verbatim}.}}}
   \b{@@V @FootNoteNum "9.1591.conti/infor.1"}}}
 
 {@@E {
-@@D "10124 699"
+@@D "12675 858"
 }
 {@NumberMarker
   \a{"9.1591.conti/infor.1"}

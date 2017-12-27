@@ -164,6 +164,23 @@
 {El patró que es mostra també funciona per tots els símbols que fan referència als elements exposats.}}}
 
 {@@E {
+{ @@A { @@E {
+@@D "77 6"
+}
+{@@V @FootNoteCounterIncrement "9.1591.conti/refli.1"} } }
+}
+{@@V @FootNoteCounterMarker
+  \a{"9.1565.conti/refli.1"}
+  \b{@@V @FootNoteNum "9.1591.conti/refli.1"}}}
+
+{@@E {
+@@D "2460 166"
+}
+{@NumberMarker
+  \a{"9.1591.conti/refli.1"}
+  \b{Arabic @@V @Num {@@V @FootNoteNum "9.1591.conti/refli.1"}}}}
+
+{@@E {
 { @@B { { @@A { @@E {
 @@D "406 32"
 }
@@ -171,7 +188,7 @@
  }
 {@@E {
 { @@A { @@E {
-@@D "2468 166"
+@@D "2804 183"
 }
 {?? @@V @Do ??} } }
 }
@@ -185,21 +202,4 @@
   \d{dft @@V @Dft @@V @ShortTitle}
   \e{refli}
   \f{{} @Join @@V @ShortNum}}}
-
-{@@E {
-{ @@A { @@E {
-@@D "77 6"
-}
-{@@V @FootNoteCounterIncrement "9.1591.conti/refli.1"} } }
-}
-{@@V @FootNoteCounterMarker
-  \a{"9.1565.conti/refli.1"}
-  \b{@@V @FootNoteNum "9.1591.conti/refli.1"}}}
-
-{@@E {
-@@D "2826 189"
-}
-{@NumberMarker
-  \a{"9.1591.conti/refli.1"}
-  \b{Arabic @@V @Num {@@V @FootNoteNum "9.1591.conti/refli.1"}}}}
 
