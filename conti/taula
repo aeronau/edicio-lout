@@ -73,52 +73,52 @@ També podem definir els estils a cada fila en comptes de definir-los amb anterio
 "{"
 "@Row"
 "    format { @Cell @B A | @Cell @B B | @Cell @B C }"
-"    A {Cel·la a A}"
-"    B {Cel·la a B}"
-"    C {Cel·la a C}"
+"    A { Cel·la a A }"
+"    B { Cel·la a B }"
+"    C { Cel·la a C }"
 "@Row"
-"    format { @Cell A | @Cell B | @Cell C}"
-"    A {Cel·la b A}"
-"    B {Cel·la b B}"
-"    C {Cel·la b C}"
+"    format { @Cell A | @Cell B | @Cell C }"
+"    A { Cel·la b A }"
+"    B { Cel·la b B }"
+"    C { Cel·la b C }"
 "@Row"
-"    format { @Cell A | @Cell B | @Cell C}"
-"    A {Cel·la b A}"
-"    B {Cel·la b B}"
-"    C {Cel·la b C}"
+"    format { @Cell A | @Cell B | @Cell C }"
+"    A { Cel·la b A }"
+"    B { Cel·la b B }"
+"    C { Cel·la b C }"
 "@Row"
-"    format { @Cell @I A | @Cell @I B | @Cell @B C}"
-"    A {Cel·la c A}"
-"    B {Cel·la c B}"
-"    C {Cel·la c C}"
+"    format { @Cell @I A | @Cell @I B | @Cell @B C }"
+"    A { Cel·la c A }"
+"    B { Cel·la c B }"
+"    C { Cel·la c C }"
 "}"
 }
 
 @Table
-   @Caption { Una altra taula } 
+   @Caption { Una altra taula }
 @Tbl
     rule { yes }
 {
 @Row
     format { @Cell @B A | @Cell @B B | @Cell @B C }
-    A {Cel·la a A}
-    B {Cel·la a B}
-    C {Cel·la a C}
+    A { Cel·la a A }
+    B { Cel·la a B }
+    C { Cel·la a C }
 @Row
-    format { @Cell A | @Cell B | @Cell C}
-    A {Cel·la b A}
-    B {Cel·la b B}
-    C {Cel·la b C}
+    format { @Cell A | @Cell B | @Cell C }
+    A { Cel·la b A }
+    B { Cel·la b B }
+    C { Cel·la b C }
 @Row
-    format { @Cell A | @Cell B | @Cell C}
-    A {Cel·la b A}
-    B {Cel·la b B}
-    C {Cel·la b C}
+    format { @Cell A | @Cell B | @Cell C }
+    A { Cel·la b A }
+    B { Cel·la b B }
+    C { Cel·la b C }
 @Row
-    format { @Cell @I A | @Cell @I B | @Cell @B C}
-    A {Cel·la c A}
-    B {Cel·la c B}
-    C {Cel·la c C}
+    format { @Cell @I A | @Cell @I B | @Cell @B C }
+    A { Cel·la c A }
+    B { Cel·la c B }
+    C { Cel·la c C }
 }
 
 @PP
@@ -134,19 +134,19 @@ També podem definir els estils a cada fila en comptes de definir-los amb anterio
 "{"
 "@Row"
 "    format { @Cell @B A | @Cell @B B | @StartVSpan @Cell @B C }"
-"    A {Cel·la a A}"
-"    B {Cel·la a B}"
-"    C {Cel·la a C}"
+"    A { Cel·la a A }"
+"    B { Cel·la a B }"
+"    C { Cel·la a C }"
 "@Row"
-"    format { @StartHSpan @Cell A | @HSpan | @VSpan}"
-"    A {Cel·la b A}"
+"    format { @StartHSpan @Cell A | @HSpan | @VSpan }"
+"    A {Cel·la b A }"
 "@Row"
-"    format { @Cell A | @StartHVSpan @Cell B | @HSpan}"
-"    A {Cel·la b A}"
-"    B {Cel·la b B}"
+"    format { @Cell A | @StartHVSpan @Cell B | @HSpan }"
+"    A { Cel·la b A }"
+"    B { Cel·la b B }"
 "@Row"
 "    format { @Cell @I A | @VSpan | }"
-"    A {Cel·la c A}"
+"    A { Cel·la c A }"
 "}"
 }
 
@@ -159,25 +159,25 @@ També podem definir els estils a cada fila en comptes de definir-los amb anterio
 {
 @Row
     format { @Cell @B A | @Cell @B B | @StartVSpan @Cell @B C }
-    A {Cel·la a A}
-    B {Cel·la a B}
-    C {Cel·la a C}
+    A { Cel·la a A }
+    B { Cel·la a B }
+    C { Cel·la a C}
 @Row
-    format { @StartHSpan @Cell A | @HSpan | @VSpan}
-    A {Cel·la b A}
+    format { @StartHSpan @Cell A | @HSpan | @VSpan }
+    A { Cel·la b A }
 @Row
-    format { @Cell A | @StartHVSpan @Cell B | @HSpan}
-    A {Cel·la b A}
-    B {Cel·la b B}
+    format { @Cell A | @StartHVSpan @Cell B | @HSpan }
+    A { Cel·la b A }
+    B { Cel·la b B }
 @Row
     format { @Cell @I A | @VSpan | }
-    A {Cel·la c A}
+    A { Cel·la c A }
 }
 
 @PP
 Aquestes indicacions permeten solucionar una gran diversitat de demandes. Tanmateix, per documents més complexos on es requereixin taules que perdurin múltiples pàgines o que tinguin només algunes línies de vora pintades, l'usuari haurà de recòrrer a la guia recomanada.
 
 @PP
-La posició predeterminada de les taules es pot configurar afegint la línia @Code "@TableLocation { ... }" al fitxer d'estil del document en comptes d'escriure @Code "@Location { ... }" a cada una de les taules. Les opcions més utilitzades són @Code{Display} i @Code{PageTop}. També hi ha les opcions @Code{FullPage}, @Code{PageFoot}, @Code{ColTop}, @Code{ColFoot}, @Code{ColEnd}, @Code{TryAfterLine} o @Code{Display}, entre d'altres. Les opcions que tenen en compte la columna són molt útils en documents amb més d'una columna de text o amb múltiples capítols. En aquest document s'ha utilitzat @Code{Display}.
+La posició predeterminada de les taules es pot configurar afegint la línia @Code "@TableLocation { ... }" al fitxer d'estil del document en comptes d'escriure @Code "@Location { ... }" a cada una de les taules. Les opcions més utilitzades són @Code{ Display } i @Code{ PageTop }. També hi ha les opcions @Code{ FullPage }, @Code{ PageFoot }, @Code{ ColTop }, @Code{ ColFoot }, @Code{ ColEnd }, @Code{ TryAfterLine } o @Code{ Display }, entre d'altres. Les opcions que tenen en compte la columna són molt útils en documents amb més d'una columna de text o amb múltiples capítols. En aquest document s'ha utilitzat @Code{ Display }.
 
 @End @Section

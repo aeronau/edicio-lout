@@ -259,23 +259,6 @@
 {{} @@V @SendRef @@V tag}}
 
 {@@E {
-{ @@A { @@E {
-@@D "77 6"
-}
-{@@V @FootNoteCounterIncrement "9.1591.conti/docti.1"} } }
-}
-{@@V @FootNoteCounterMarker
-  \a{"9.1565.conti/docti.1"}
-  \b{@@V @FootNoteNum "9.1591.conti/docti.1"}}}
-
-{@@E {
-@@D "3993 261"
-}
-{@NumberMarker
-  \a{"9.1591.conti/docti.1"}
-  \b{Arabic @@V @Num {@@V @FootNoteNum "9.1591.conti/docti.1"}}}}
-
-{@@E {
 { @@B { { @@A { @@E {
 @@D "424 32"
 }
@@ -283,7 +266,7 @@
  }
 {@@E {
 { @@A { @@E {
-@@D "4337 278"
+@@D "4001 261"
 }
 {?? @@V @Do ??} } }
 }
@@ -297,4 +280,21 @@
   \d{dft @@V @Dft @@V @ShortTitle}
   \e{"10.694.conti/docti.1"}
   \f{{} @Join @@V @ShortNum}}}
+
+{@@E {
+{ @@A { @@E {
+@@D "77 6"
+}
+{@@V @FootNoteCounterIncrement "9.1591.conti/docti.1"} } }
+}
+{@@V @FootNoteCounterMarker
+  \a{"9.1565.conti/docti.1"}
+  \b{@@V @FootNoteNum "9.1591.conti/docti.1"}}}
+
+{@@E {
+@@D "4376 284"
+}
+{@NumberMarker
+  \a{"9.1591.conti/docti.1"}
+  \b{Arabic @@V @Num {@@V @FootNoteNum "9.1591.conti/docti.1"}}}}
 

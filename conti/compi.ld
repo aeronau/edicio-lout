@@ -186,6 +186,23 @@ PDF}}
 
 {@@E {
 { @@A { @@E {
+@@D "77 6"
+}
+{@@V @FootNoteCounterIncrement "9.1591.conti/compi.1"} } }
+}
+{@@V @FootNoteCounterMarker
+  \a{"9.1565.conti/compi.1"}
+  \b{@@V @FootNoteNum "9.1591.conti/compi.1"}}}
+
+{@@E {
+@@D "2826 187"
+}
+{@NumberMarker
+  \a{"9.1591.conti/compi.1"}
+  \b{Arabic @@V @Num {@@V @FootNoteNum "9.1591.conti/compi.1"}}}}
+
+{@@E {
+{ @@A { @@E {
 { @@B { { @@A { @@E {
 @@D "2335 167"
 }
@@ -193,7 +210,7 @@ PDF}}
  }
 {@@E {
 { @@A { @@E {
-@@D "2848 188"
+@@D "3184 205"
 }
 {?? ,} } }
 }
@@ -216,57 +233,6 @@ PDF}}
 {@FootNote
   \a{"9.1591.conti/compi.3"}
 {Apareixen com a @Code {línia,columna: unresolved cross reference @NumberMarker&&{9.1591.conti"/"compi.1}} al terminal quan no han sigut solucionades.}}}
-
-{@@E {
-{ @@A { @@E {
-@@D "77 6"
-}
-{@@V @FootNoteCounterIncrement "9.1591.conti/compi.1"} } }
-}
-{@@V @FootNoteCounterMarker
-  \a{"9.1565.conti/compi.1"}
-  \b{@@V @FootNoteNum "9.1591.conti/compi.1"}}}
-
-{@@E {
-@@D "3620 220"
-}
-{@NumberMarker
-  \a{"9.1591.conti/compi.1"}
-  \b{Arabic @@V @Num {@@V @FootNoteNum "9.1591.conti/compi.1"}}}}
-
-{@@E {
-{ @@A { @@E {
-@@D "77 6"
-}
-{@@V @FootNoteCounterIncrement "9.1591.conti/compi.2"} } }
-}
-{@@V @FootNoteCounterMarker
-  \a{"9.1565.conti/compi.2"}
-  \b{@@V @FootNoteNum "9.1591.conti/compi.2"}}}
-
-{@@E {
-@@D "3956 237"
-}
-{@NumberMarker
-  \a{"9.1591.conti/compi.2"}
-  \b{Arabic @@V @Num {@@V @FootNoteNum "9.1591.conti/compi.2"}}}}
-
-{@@E {
-{ @@A { @@E {
-@@D "77 6"
-}
-{@@V @FootNoteCounterIncrement "9.1591.conti/compi.3"} } }
-}
-{@@V @FootNoteCounterMarker
-  \a{"9.1565.conti/compi.3"}
-  \b{@@V @FootNoteNum "9.1591.conti/compi.3"}}}
-
-{@@E {
-@@D "4292 254"
-}
-{@NumberMarker
-  \a{"9.1591.conti/compi.3"}
-  \b{Arabic @@V @Num {@@V @FootNoteNum "9.1591.conti/compi.3"}}}}
 
 {@@E {
 @@D "63 5"
@@ -322,7 +288,7 @@ PDF}}
  }
 {@@E {
 { @@A { @@E {
-@@D "4817 286"
+@@D "4145 252"
 }
 {?? @@V @Do ??} } }
 }
@@ -335,7 +301,7 @@ PDF}}
 {@@E {
 { @@A { @@E {
 { @@A { @@E {
-@@D "4817 286"
+@@D "4145 252"
 }
 {@@V @ContentsStuff} } }
 }
@@ -356,7 +322,7 @@ PDF}}
   \g{@@V postgap}}}
 
 {@@E {
-@@D "4817 286"
+@@D "4145 252"
 }
 {@TitleMarker
   \a{ps2pdf}
@@ -383,7 +349,7 @@ PDF}}
  }
 {@@E {
 { @@A { @@E {
-@@D "6280 378"
+@@D "5608 344"
 }
 {?? @@V @Do ??} } }
 }
@@ -397,6 +363,40 @@ PDF}}
   \d{dft @@V @Dft @@V @ShortTitle}
   \e{compi}
   \f{{} @Join @@V @ShortNum}}}
+
+{@@E {
+{ @@A { @@E {
+@@D "77 6"
+}
+{@@V @FootNoteCounterIncrement "9.1591.conti/compi.2"} } }
+}
+{@@V @FootNoteCounterMarker
+  \a{"9.1565.conti/compi.2"}
+  \b{@@V @FootNoteNum "9.1591.conti/compi.2"}}}
+
+{@@E {
+@@D "5966 367"
+}
+{@NumberMarker
+  \a{"9.1591.conti/compi.2"}
+  \b{Arabic @@V @Num {@@V @FootNoteNum "9.1591.conti/compi.2"}}}}
+
+{@@E {
+{ @@A { @@E {
+@@D "77 6"
+}
+{@@V @FootNoteCounterIncrement "9.1591.conti/compi.3"} } }
+}
+{@@V @FootNoteCounterMarker
+  \a{"9.1565.conti/compi.3"}
+  \b{@@V @FootNoteNum "9.1591.conti/compi.3"}}}
+
+{@@E {
+@@D "6302 384"
+}
+{@NumberMarker
+  \a{"9.1591.conti/compi.3"}
+  \b{Arabic @@V @Num {@@V @FootNoteNum "9.1591.conti/compi.3"}}}}
 
 {@@E {
 { @@A { @@E {

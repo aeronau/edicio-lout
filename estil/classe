@@ -503,4 +503,4 @@
 
 @SysDatabase @FontDef  { fontdefs }		  # font definitions
 @SysDatabase @RefStyle { refstyle }		  # reference printing styles
-@SysDatabase @Reference{loutrefs}
+@SysDatabase @Reference { loutrefs }

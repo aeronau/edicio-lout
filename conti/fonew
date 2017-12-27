@@ -1,0 +1,64 @@
+@SubSection
+	@Title { Canvi del tipus de lletra }
+    @Tag { fonew }
+@Begin
+
+@PP
+En certes ocasions es requereix l'ús de múltiples tipus de lletra. Ja sigui per desig propi o per causa major, els tipus distribuïts amb Lout podrien no ser suficients per l'usuari. Afegir un tipus de lletra a Lout no és complicat, encara que un usuari novell podria veure's desbordat. És recomanable conèixer el domini una mica abans de seguir.
+
+@PP
+El primer pas és crear la base de dades de tipus de lletra. En el directori de treball s'ha de crear un fitxer, també amb codificació ISO-8859-1 anomenat @Code myfontdefs.ld (és important el @Code .ld per indicar que és una @Code database) amb el contingut necessari per definir la font, com es mostra a continuació.
+
+@ID @Code{
+"{ @FontDef"
+"    @Tag { Overpass-Base }"
+"    @Family { Overpass }"
+"    @Face { Base }"
+"    @Name { Overpass-Reg }"
+"    @Metrics { Overpass-Reg.afm }"
+"    @Mapping { LtLatin1.LCM }"
+"}"
+}
+
+S'ha d'emplenar el fitxer @Code myfontdefs.ld com a mínim per a les fonts @Code Base, @Code Bold i @Code Slope, les fonts mínimes necessaries per a Lout.
+
+@PP
+Per tal que una font estigui ben referenciada, s'han d'omplir correctament els camps. A @Code "@Tag { ... }" hi ha d'haver la família seguida pel pes, ambdòs units amb guionet. És a dir, ha de contenir el camp @Code "@Family { ... }" i el camp @Code "@Face { ... }" units amb guionet en aquest ordre. A @Code "@Metrics { ... }" s'ha de referenciar el fitxer @Code .afm que conté la descripció mètrica de la font. Vegeu @cref @TitleOf { afmpfa } per saber com obtenir-lo. A @Code "@Name { ... }" s'ha d'escriure el nom de la font. El nom de la font es pot trobar al principi del fitxer @Code .afm i és fàcilment identificable, tal i com es veu en l'extracte del fitxer que hi ha a continuació.
+
+@ID @Code{
+FontName Overpass-Reg
+FullName Overpass-Reg
+FamilyName Overpass
+}
+
+Pel que fa a @Code "@Mapping { ... }", en la majoria de casos s'utilitzarà el contingut exposat anteriorment @Code { LtLatin1.LCM }, ja que els caràcters emprats en l'escriptura de la llengua catalana són descrits en el fitxer indicat.
+
+@PP
+Lout utilitza el fitxer @Code .afm per crear les caixes on s'inseriran els caràcters, sense conèixer en cap moment quina lletra hi anirà a cada una. Tanmateix, l'encarregat de renderitzar els caràcters és un altre programa, per exemple, GhostScript. Per tal que el programa sigui capaç de mostrar els caràcters al fitxer, s'han de posar a disposició del programa els fitxers necessaris (sinó s'ha fet per defecte). Per fer-ho, s'ha d'obrir el fitxer @Code { "/usr/share/ghostscript/9.18/Resource/Init/Fontmap.GS" } i afegir al final @ID @Code { "/Overpass-Reg       (/home/arnau/Dropbox/lout/ediciolout/estil/Overpass-Reg.pfa)    ;" } o l'equivalent per la font desitjada. S'ha de seguir estrictament l'espaiat, @ID @Code { "/FontName<tab><tab>(/camí/del/fitxer/FontName.pfa)<tab>;" } on @Code "<tab>" és una tabulació. El fitxer @Code .pfa l'acostuma a proporcionar l'autor de la font. En els casos que no es disposi del fitxer, consulteu @cref @TitleOf { afmpfa }.
+
+@PP
+L'addició de la font s'haurà realitzat correctament si en obrir un terminal i executar @Code { gs prfont.ps } i llavors @Code "/Overpass-Reg DoFont" (a @Code { "GS>" }), apareix una pantalla amb la font renderitzada. 
+
+@PP
+Per obtenir el fitxer final, s'ha d'executar @Code { lout -F "/directori/del/fitxer/afm" -D "/directori/del/fitxer/myfontdefs.ld" -o output.ps input }. A @Code "-F" (de @eng { font }) s'ha de posar el directori del fitxer @Code .afm, mentre que a @Code "-D" (de @eng { database }), el directori de @Code { myfontdefs.ld }.
+
+@BeginSubSubSections
+@SubSubSection
+    @Title { Obtenció dels fitxers de font @Code .afm i @Code .pfa }
+    @Tag { afmpfa }
+@Begin
+
+@PP
+En molts casos, el proveïdor de la font ja proporciona el fitxer @Code { .afm }. En cas que ja ens sigui proporcionat, cal revisar que la codificació sigui ISO-8859-1. En els casos que només es disposa del fitxer @Code .ttf  (TrueType)  o @Code .otf (OpenType) es pot utilitzar el programa FontForge per obtenir el fitxer @Code .afm i el @Code .pfa (que més endavant el necessitarem). Els passos per aconseguir-ho són els que es troben a continuació.
+
+@LeftList
+	@ParagraphItem { Obriu el fitxer @Code .ttf o @Code .otf amb FontForge. }
+	@ParagraphItem { Cambieu la codificació amb @MenuEle Encoding @Sym arrowright @MenuEle Reencode @Sym arrowright @MenuEle { ISO 8859-1 (Latin 1) }. }
+	@ParagraphItem { Obriu el quadre @MenuEle { Font Info } des del menú, emprant @MenuEle Element @Sym arrowright @MenuEle { Font Info }. En el quadre de diàleg, aneu a @MenuEle General i en el camp @MenuEle { Em Size }, canvieu el valor donat per 1000. }
+	@ParagraphItem { Genereu els fitxers necessaris amb @MenuEle File @Sym arrowright @MenuEle { Generate Fonts }. Cal seleccionar @MenuEle { PS Type 1 (Ascii) } (noteu que l'extensió és @Code { .pfa }) i a @MenuEle Options, escolliu @MenuEle { Output AFM }. }
+@EndList 
+
+@End @SubSubSection
+@EndSubSubSections
+
+@End @SubSection

@@ -14,23 +14,19 @@
 	@Institution { lout-users }
 	@DateLine { Agost de 2016 }
 	@Abstract { En aquesta introducció a l'eina d'edició de textos Lout s'hi exposa el tractament adequat per obtenir un document extens, comprès d'un gran nombre de seccions i fitxers. Es tracta d'una referència simplificada per usuaris de Lout. }
-//                         # Beautified?
-@Include { "conti/infor" } # Okt
-@Include { "conti/codif" } # Okt
-@Include { "conti/simbo" } # Okt
-@Include { "conti/docti" } # Okt
-@Include { "conti/secci" } # Okt
-@Include { "conti/parag" } # Okt
-@Include { "conti/refli" } # Okt
-@Include { "conti/equac" } # OKt
-@Include { "conti/grafs" } # Not
-@Include { "conti/taula" } # Ok
-@Include { "conti/compi" } # Okt
-@Section
-    @Title { Característiques avançades }
-@Begin
-@BeginSubSections
-@Include { "conti/defis" } #Okt
-@Include { "conti/fonts" } #Okt
-@EndSubSections
-@End @Section
+//
+#Include file        # Beautified?
+@Include { "conti/infor" } # Y
+@Include { "conti/codif" } # Y
+@Include { "conti/simbo" } # Y
+@Include { "conti/docti" } # Y
+@Include { "conti/llarg" } # Y
+@Include { "conti/secci" } # Y
+@Include { "conti/parag" } # Y
+@Include { "conti/refli" } # Y
+@Include { "conti/fonts" } # Y
+@Include { "conti/equac" } # Y
+@Include { "conti/grafs" } # N
+@Include { "conti/taula" } # Y
+@Include { "conti/compi" } # Y
+@Include { "conti/advnc" } # Y

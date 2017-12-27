@@ -24,7 +24,7 @@
 {@LUse @PieSetup} } }
 }
 {@Section
-  \a{"10.694.0.1"}
+  \a{"10.694.conti/advnc.1"}
   \b{Característiques avançades}
 { @LInput }} } }
 }
@@ -72,7 +72,7 @@
  }
 {@@E {
 { @@A { @@E {
-@@D "481 36"
+@@D "491 36"
 }
 {?? @@V @Do ??} } }
 }
@@ -85,7 +85,7 @@
 {@@E {
 { @@A { @@E {
 { @@A { @@E {
-@@D "481 36"
+@@D "491 36"
 }
 {@@V @ContentsStuff} } }
 }
@@ -106,7 +106,7 @@
   \g{@@V postgap}}}
 
 {@@E {
-@@D "481 36"
+@@D "491 36"
 }
 {@TitleMarker
   \a{defis}
@@ -136,7 +136,7 @@
   \b{@@V @FootNoteNum "9.1591.conti/defis.1"}}}
 
 {@@E {
-@@D "2007 128"
+@@D "2017 128"
 }
 {@NumberMarker
   \a{"9.1591.conti/defis.1"}

@@ -1,0 +1,29 @@
+@Section
+	@Title { Estructura d'un document llarg }
+@Begin
+
+@PP
+No és recomanable escriure un document de dimensions prou considerables en un mateix document. És convenient tenir un document que actuï com a base o marc on s'hi referencien els fitxers que contenen el text corresponent a un capítol o una secció. Això facilita enormement la redacció del document ja que els continguts estan repartits en temàtica i el programa d'edició només ha de carregar la fracció desitjada del document, i no pas la totalitat. En aquest document una part dels fitxers s'han referenciat de la manera que es mostra:
+
+@ID @Code {
+"@Report"
+"..."
+"//"
+"@Include {" {@Char quotedbl}conti"/"infor{@Char quotedbl} "}"
+"@Include {" {@Char quotedbl}conti"/"codif{@Char quotedbl} "}"
+"@Include {" {@Char quotedbl}conti"/"simbo{@Char quotedbl} "}"
+"@Include {" {@Char quotedbl}conti"/"docti{@Char quotedbl} "}"
+"@Include {" {@Char quotedbl}conti"/"llarg{@Char quotedbl} "}"
+"..."
+}
+
+Noteu que els fitxers @Code "infor", @Code "codif", @Code "simbo", @Code "docti" i @Code "llarg" es troben en una subcarpeta anomenada @Code "conti", de continguts. La carpeta es troba en el mateix directori que el fitxer base que inclou el codi presentat anteriorment. En els fitxers esmentats hi ha el text d'aquest document: a @Code "simbo" s'expliquen els símbols de Lout, a @Code "codif" es parla de la codificació dels documents, mentre que @Code "llarg" conté aquest mateix text que esteu llegint.
+
+
+@PP
+Des del punt de vista del compilador utilitzar el símbol @Code "@Include" no representa cap problema en absolut. De fet, tot i utilitzar el sistema de fitxers que s'ha explicat en el paràgraf anterior el compilador més veu la totalitat del document. És a dir, en compilar el fitxer base, l'eina ja inclou el contingut dels fitxers referenciats al marc.
+
+@PP
+Això vol dir que no hi ha problema en cridar etiquetes d'elements d'altres fitxers---sempre que s'hagin declarat abans de la crida---doncs el compilador veu el conjunt del text.
+
+@End @Section

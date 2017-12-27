@@ -190,7 +190,7 @@
 }
 {@SubSection
   \a{"10.725.conti/infor.1"}
-  \b{Programari}
+  \b{Per què utilitzar Lout?}
 { ??? }}}
 
 {@@E {
@@ -200,11 +200,399 @@
 }
 {@SubSection
   \a{"10.725.conti/infor.1"}
-  \b{Programari}
+  \b{Per què utilitzar Lout?}
 { @LInput }} } }
 }
 {@@V @LargeScaleStructure
   \a{"10.725.conti/infor.1"}
+  \b{Minor}
+  \c{}
+  \d{@@V @Title}
+  \e{dft}
+  \g{Bold}
+  \h{@@V @SubSectionHeadingBreak}
+  \i{@Num @@V @SubSectionHeadingFormat @Body}
+  \k{Yes}
+  \l{@@V @SubSectionContentsIndent}
+  \n{Arabic}
+  \o{{@@V @SubSectionList&&preceding} @Tagged @@V @Tag}
+  \p{{@@V @SubSectionList&&{@@V @Tag}} @Open {num}}
+  \q{dft}
+  \r{@@V @SectionShortNum}
+  \t{}
+  \u{}
+  \x{No}
+  \y{No}
+  \z{No}
+  intables{No}
+  infloaters{No}
+  inrunners{No}
+  newpage{No}
+@@V @Body} } }
+ }
+{@@E {
+{ @@A { @@E {
+@@D "2898 196"
+}
+{?? @@V @Do ??} } }
+}
+{@@V y}} }
+}
+{@NumberMarker
+  \a{"10.725.conti/infor.1"}
+  \b{@@V @ShortNum}}}
+
+{@@E {
+{ @@A { @@E {
+{ @@A { @@E {
+@@D "2898 196"
+}
+{@@V @ContentsStuff} } }
+}
+{Yes @@V @ContentsEntry
+  \a{@@V contentsindent}
+  \b{"10.725.conti/infor.1"}
+  \c{@@V @LongNum}
+  \d{@@V initiallanguage @Language @@V title}
+  \e{@PageOf "10.725.conti/infor.1"}} } }
+}
+{@@V @SendContents @@V @ContentsItem
+  \a{@@V indent}
+  \b{"10.725.conti/infor.1"}
+  \c{@@V number}
+  \d{@@V title}
+  \e{@@V pagenum}
+  \f{@@V pregap}
+  \g{@@V postgap}}}
+
+{@@E {
+@@D "2898 196"
+}
+{@TitleMarker
+  \a{"10.725.conti/infor.1"}
+  \b{@@V title}}}
+
+{@@E {
+{ @@A { @@E {
+{ @@A { @@E {
+{ @@A { @@E {
+{ @@A { @@E {
+@@D "2363 155"
+}
+{@SubSection
+  \a{"10.725.conti/infor.1"}
+  \b{Per què utilitzar Lout?}
+{ @LInput }} } }
+}
+{@RawList
+  \a{@Bullet}} } }
+}
+{@@V @MakeList 1} } }
+}
+{@@V @NormalItem} } }
+}
+{@NumberMarker
+  \a{"4.1246.conti/infor.2"}
+  \b{@@V type 1}}}
+
+{@@E {
+@@D "4264 278"
+}
+{@@V listitem
+  \a{"4.1794.conti/infor.1"}
+???}}
+
+{@@E {
+{ @@A { @@E {
+{ @@A { @@E {
+@@D "4250 277"
+}
+{@@V @MakeList 2} } }
+}
+{@@V @NormalItem} } }
+}
+{@NumberMarker
+  \a{"4.1246.conti/infor.4"}
+  \b{@@V type 2}}}
+
+{@@E {
+@@D "4264 278"
+}
+{@@V listitem
+  \a{"4.1794.conti/infor.2"}
+???}}
+
+{@@E {
+{ @@A { @@E {
+{ @@A { @@E {
+@@D "4250 277"
+}
+{@@V @MakeList 3} } }
+}
+{@@V @NormalItem} } }
+}
+{@NumberMarker
+  \a{"4.1246.conti/infor.6"}
+  \b{@@V type 3}}}
+
+{@@E {
+@@D "4264 278"
+}
+{@@V listitem
+  \a{"4.1794.conti/infor.3"}
+???}}
+
+{@@E {
+{ @@A { @@E {
+{ @@A { @@E {
+@@D "4250 277"
+}
+{@@V @MakeList 4} } }
+}
+{@@V @NormalItem} } }
+}
+{@NumberMarker
+  \a{"4.1246.conti/infor.8"}
+  \b{@@V type 4}}}
+
+{@@E {
+@@D "4264 278"
+}
+{@@V listitem
+  \a{"4.1794.conti/infor.4"}
+???}}
+
+{@@E {
+{ @@A { @@E {
+{ @@A { @@E {
+@@D "4250 277"
+}
+{@@V @MakeList 5} } }
+}
+{@@V @NormalItem} } }
+}
+{@NumberMarker
+  \a{"4.1246.conti/infor.10"}
+  \b{@@V type 5}}}
+
+{@@E {
+@@D "4264 278"
+}
+{@@V listitem
+  \a{"4.1794.conti/infor.5"}
+???}}
+
+{@@E {
+{ @@A { @@E {
+{ @@A { @@E {
+@@D "4250 277"
+}
+{@@V @MakeList 6} } }
+}
+{@@V @NormalItem} } }
+}
+{@NumberMarker
+  \a{"4.1246.conti/infor.12"}
+  \b{@@V type 6}}}
+
+{@@E {
+@@D "4264 278"
+}
+{@@V listitem
+  \a{"4.1794.conti/infor.6"}
+???}}
+
+{@@E {
+{ @@A { @@E {
+{ @@A { @@E {
+@@D "4250 277"
+}
+{@@V @MakeList 7} } }
+}
+{@@V @NormalItem} } }
+}
+{@NumberMarker
+  \a{"4.1246.conti/infor.14"}
+  \b{@@V type 7}}}
+
+{@@E {
+@@D "4264 278"
+}
+{@@V listitem
+  \a{"4.1794.conti/infor.7"}
+???}}
+
+{@@E {
+{ @@A { @@E {
+{ @@A { @@E {
+@@D "4250 277"
+}
+{@@V @MakeList 8} } }
+}
+{@@V @NormalItem} } }
+}
+{@NumberMarker
+  \a{"4.1246.conti/infor.16"}
+  \b{@@V type 8}}}
+
+{@@E {
+@@D "4264 278"
+}
+{@@V listitem
+  \a{"4.1794.conti/infor.8"}
+???}}
+
+{@@E {
+{ @@A { @@E {
+{ @@A { @@E {
+{ @@A { @@E {
+@@D "4264 278"
+}
+{@RawList
+  \a{@Bullet}} } }
+}
+{@@V @MakeList 1} } }
+}
+{@@V @NormalItem} } }
+}
+{@NumberMarker
+  \a{"4.1246.conti/infor.18"}
+  \b{@@V type 1}}}
+
+{@@E {
+@@D "4264 278"
+}
+{@@V listitem
+  \a{"4.1794.conti/infor.9"}
+???}}
+
+{@@E {
+{ @@A { @@E {
+{ @@A { @@E {
+@@D "6308 447"
+}
+{@@V @MakeList 2} } }
+}
+{@@V @NormalItem} } }
+}
+{@NumberMarker
+  \a{"4.1246.conti/infor.20"}
+  \b{@@V type 2}}}
+
+{@@E {
+@@D "4264 278"
+}
+{@@V listitem
+  \a{"4.1794.conti/infor.10"}
+???}}
+
+{@@E {
+{ @@A { @@E {
+{ @@A { @@E {
+@@D "6308 447"
+}
+{@@V @MakeList 3} } }
+}
+{@@V @NormalItem} } }
+}
+{@NumberMarker
+  \a{"4.1246.conti/infor.22"}
+  \b{@@V type 3}}}
+
+{@@E {
+@@D "4264 278"
+}
+{@@V listitem
+  \a{"4.1794.conti/infor.11"}
+???}}
+
+{@@E {
+{ @@A { @@E {
+{ @@A { @@E {
+@@D "6308 447"
+}
+{@@V @MakeList 4} } }
+}
+{@@V @NormalItem} } }
+}
+{@NumberMarker
+  \a{"4.1246.conti/infor.24"}
+  \b{@@V type 4}}}
+
+{@@E {
+@@D "4264 278"
+}
+{@@V listitem
+  \a{"4.1794.conti/infor.12"}
+???}}
+
+{@@E {
+{ @@A { @@E {
+{ @@A { @@E {
+@@D "6308 447"
+}
+{@@V @MakeList 5} } }
+}
+{@@V @NormalItem} } }
+}
+{@NumberMarker
+  \a{"4.1246.conti/infor.26"}
+  \b{@@V type 5}}}
+
+{@@E {
+@@D "4264 278"
+}
+{@@V listitem
+  \a{"4.1794.conti/infor.13"}
+???}}
+
+{@@E {
+{ @@A { @@E {
+{ @@A { @@E {
+@@D "6308 447"
+}
+{@@V @MakeList 6} } }
+}
+{@@V @NormalItem} } }
+}
+{@NumberMarker
+  \a{"4.1246.conti/infor.28"}
+  \b{@@V type 6}}}
+
+{@@E {
+@@D "4264 278"
+}
+{@@V listitem
+  \a{"4.1794.conti/infor.14"}
+???}}
+
+{@@E {
+@@D "63 5"
+}
+{@@V @SubSectionList
+  \a{"10.238.conti/infor.2"}
+2}}
+
+{@@E {
+@@D "2363 155"
+}
+{@SubSection
+  \a{"10.725.conti/infor.2"}
+  \b{Programari}
+{ ??? }}}
+
+{@@E {
+{ @@B { { @@A { @@E {
+{ @@A { @@E {
+@@D "2363 155"
+}
+{@SubSection
+  \a{"10.725.conti/infor.2"}
+  \b{Programari}
+{ @LInput }} } }
+}
+{@@V @LargeScaleStructure
+  \a{"10.725.conti/infor.2"}
   \b{Minor}
   \c{}
   \d{Programari}
@@ -232,33 +620,33 @@
  }
 {@@E {
 { @@A { @@E {
-@@D "2885 196"
+@@D "7941 584"
 }
 {?? @@V @Do ??} } }
 }
 {@@V y}} }
 }
 {@NumberMarker
-  \a{"10.725.conti/infor.1"}
+  \a{"10.725.conti/infor.2"}
   \b{@@V @ShortNum}}}
 
 {@@E {
 { @@A { @@E {
 { @@A { @@E {
-@@D "2885 196"
+@@D "7941 584"
 }
 {@@V @ContentsStuff} } }
 }
 {Yes @@V @ContentsEntry
   \a{@@V contentsindent}
-  \b{"10.725.conti/infor.1"}
+  \b{"10.725.conti/infor.2"}
   \c{@@V @LongNum}
   \d{@@V initiallanguage @Language @@V title}
-  \e{@PageOf "10.725.conti/infor.1"}} } }
+  \e{@PageOf "10.725.conti/infor.2"}} } }
 }
 {@@V @SendContents @@V @ContentsItem
   \a{@@V indent}
-  \b{"10.725.conti/infor.1"}
+  \b{"10.725.conti/infor.2"}
   \c{@@V number}
   \d{@@V title}
   \e{@@V pagenum}
@@ -269,7 +657,7 @@
 @@D "91 7"
 }
 {@TitleMarker
-  \a{"10.725.conti/infor.1"}
+  \a{"10.725.conti/infor.2"}
   \b{Programari}}}
 
 {@@E {
@@ -277,7 +665,7 @@
 @@D "2363 155"
 }
 {@SubSection
-  \a{"10.725.conti/infor.1"}
+  \a{"10.725.conti/infor.2"}
   \b{Programari}
 { @LInput }} } }
 }
@@ -296,7 +684,7 @@ C:\lout\bin @End @Verbatim}.}}}
  }
 {@@E {
 { @@A { @@E {
-@@D "4693 288"
+@@D "9749 676"
 }
 {?? @@V @Do ??} } }
 }
@@ -322,7 +710,7 @@ C:\lout\bin @End @Verbatim}.}}}
   \b{@@V @FootNoteNum "9.1591.conti/infor.1"}}}
 
 {@@E {
-@@D "5068 311"
+@@D "10124 699"
 }
 {@NumberMarker
   \a{"9.1591.conti/infor.1"}

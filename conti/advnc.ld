@@ -23,8 +23,8 @@
 {@LUse @PieSetup} } }
 }
 {@Section
-  \b{Referències creuades i enllaços}
-  \a{refli}
+  \a{"10.694.conti/advnc.1"}
+  \b{Característiques avançades}
 { ??? }}}
 
 {@@E {
@@ -35,12 +35,12 @@
 @@D "7 1"
 }
 {@Section
-  \b{Referències creuades i enllaços}
-  \a{refli}
+  \a{"10.694.conti/advnc.1"}
+  \b{Característiques avançades}
 { @LInput }} } }
 }
 {@@V @LargeScaleStructure
-  \a{refli}
+  \a{"10.694.conti/advnc.1"}
   \b{Minor}
   \c{}
   \d{@@V @Title}
@@ -72,53 +72,53 @@
  }
 {@@E {
 { @@A { @@E {
-@@D "378 30"
+@@D "390 30"
 }
 {?? @@V @Do ??} } }
 }
 {@@V y}} }
 }
 {@@V start @Runner
-  \g{"9.966.conti/refli.1"}
+  \g{"9.966.conti/advnc.1"}
   \a{{} @@V @Dft @@V @LongNum}
   \b{{} @@V @Dft @@V @ShortTitle}
   \c{dft @@V @Dft @@V @LongNum}
   \d{dft @@V @Dft @@V @ShortTitle}
-  \e{refli}
+  \e{"10.694.conti/advnc.1"}
   \f{{} @Join @@V @ShortNum}}}
 
 {@@E {
-{ @@B { @@D "406 32"
+{ @@B { @@D "418 32"
  }
 {@@E {
 { @@A { @@E {
-@@D "406 32"
+@@D "418 32"
 }
 {?? @@V @Do ??} } }
 }
 {@@V y}} }
 }
 {@NumberMarker
-  \a{refli}
+  \a{"10.694.conti/advnc.1"}
   \b{@@V @ShortNum}}}
 
 {@@E {
 { @@A { @@E {
 { @@A { @@E {
-@@D "406 32"
+@@D "418 32"
 }
 {@@V @ContentsStuff} } }
 }
 {Yes @@V @ContentsEntry
   \a{@@V contentsindent}
-  \b{refli}
+  \b{"10.694.conti/advnc.1"}
   \c{@@V @LongNum}
   \d{@@V initiallanguage @Language @@V title}
-  \e{@PageOf refli}} } }
+  \e{@PageOf "10.694.conti/advnc.1"}} } }
 }
 {@@V @SendContents @@V @ContentsItem
   \a{@@V indent}
-  \b{refli}
+  \b{"10.694.conti/advnc.1"}
   \c{@@V number}
   \d{@@V title}
   \e{@@V pagenum}
@@ -126,80 +126,64 @@
   \g{@@V postgap}}}
 
 {@@E {
-@@D "406 32"
+@@D "418 32"
 }
 {@TitleMarker
-  \a{refli}
+  \a{"10.694.conti/advnc.1"}
   \b{@@V title}}}
 
 {@@E {
 { @@B { { @@A { @@E {
-@@D "406 32"
+@@D "418 32"
 }
 {Yes @BeginDisplayCounter @@V @ShortNum} } }
  }
 {@@E {
 { @@A { @@E {
-@@D "1961 135"
+@@D "2104 135"
 }
 {?? @@V @Do ??} } }
 }
 {@@V y}} }
 }
 {@@V @NumDispCounterMarker
-  \a{"4.1475.conti/refli.1"}
+  \a{"4.1475.conti/advnc.1"}
   \b{@@V prefix @Join 0}}}
 
 {@@E {
-{ @@A { @@E {
-@@D "7 1"
+@@D "63 5"
 }
-{@Section
-  \b{Referències creuades i enllaços}
-  \a{refli}
-{ @LInput }} } }
+{@@V @SubSectionList
+  \a{"10.238.conti/advnc.1"}
+1}}
+
+{@@E {
+@@D "63 5"
 }
-{@FootNote
-  \a{"9.1591.conti/refli.1"}
-{El patró que es mostra també funciona per tots els símbols que fan referència als elements exposats.}}}
+{@@V @SubSectionList
+  \a{"10.238.conti/advnc.2"}
+2}}
 
 {@@E {
 { @@B { { @@A { @@E {
-@@D "406 32"
+@@D "418 32"
 }
 {@@V @Run NonStart} } }
  }
 {@@E {
 { @@A { @@E {
-@@D "2468 166"
+@@D "2503 167"
 }
 {?? @@V @Do ??} } }
 }
 {@@V y}} }
 }
 {NonStart @Runner
-  \g{"9.966.conti/refli.2"}
+  \g{"9.966.conti/advnc.2"}
   \a{{} @@V @Dft @@V @LongNum}
   \b{{} @@V @Dft @@V @ShortTitle}
   \c{dft @@V @Dft @@V @LongNum}
   \d{dft @@V @Dft @@V @ShortTitle}
-  \e{refli}
+  \e{"10.694.conti/advnc.1"}
   \f{{} @Join @@V @ShortNum}}}
-
-{@@E {
-{ @@A { @@E {
-@@D "77 6"
-}
-{@@V @FootNoteCounterIncrement "9.1591.conti/refli.1"} } }
-}
-{@@V @FootNoteCounterMarker
-  \a{"9.1565.conti/refli.1"}
-  \b{@@V @FootNoteNum "9.1591.conti/refli.1"}}}
-
-{@@E {
-@@D "2826 189"
-}
-{@NumberMarker
-  \a{"9.1591.conti/refli.1"}
-  \b{Arabic @@V @Num {@@V @FootNoteNum "9.1591.conti/refli.1"}}}}
 

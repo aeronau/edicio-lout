@@ -233,17 +233,6 @@
 
 {@@E {
 { @@A { @@E {
-{ @@A { @@E {
-@@D "2363 155"
-}
-{@Cite { ?? }} } }
-}
-{@Ref {kingston1995lout.user}} } }
-}
-{{} @@V @SendRef @@V tag}}
-
-{@@E {
-{ @@A { @@E {
 @@D "77 6"
 }
 {@@V @FootNoteCounterIncrement "9.1591.conti/grafs.1"} } }
@@ -253,11 +242,22 @@
   \b{@@V @FootNoteNum "9.1591.conti/grafs.1"}}}
 
 {@@E {
-@@D "3468 245"
+@@D "3330 234"
 }
 {@NumberMarker
   \a{"9.1591.conti/grafs.1"}
   \b{Arabic @@V @Num {@@V @FootNoteNum "9.1591.conti/grafs.1"}}}}
+
+{@@E {
+{ @@A { @@E {
+{ @@A { @@E {
+@@D "2363 155"
+}
+{@Cite { ?? }} } }
+}
+{@Ref {kingston1995lout.user}} } }
+}
+{{} @@V @SendRef @@V tag}}
 
 {@@E {
 @@D "2363 155"
@@ -279,23 +279,6 @@
 { @@A { @@E {
 @@D "77 6"
 }
-{@@V @FootNoteCounterIncrement "9.1591.conti/grafs.2"} } }
-}
-{@@V @FootNoteCounterMarker
-  \a{"9.1565.conti/grafs.2"}
-  \b{@@V @FootNoteNum "9.1591.conti/grafs.2"}}}
-
-{@@E {
-@@D "4154 278"
-}
-{@NumberMarker
-  \a{"9.1591.conti/grafs.2"}
-  \b{Arabic @@V @Num {@@V @FootNoteNum "9.1591.conti/grafs.2"}}}}
-
-{@@E {
-{ @@A { @@E {
-@@D "77 6"
-}
 {@@V @FigureCounterIncrement plot} } }
 }
 {@@V @FigureCounterMarker
@@ -303,7 +286,7 @@
   \b{@@V @RawFigureNum plot}}}
 
 {@@E {
-@@D "4490 295"
+@@D "4154 278"
 }
 {@NumberMarker
   \a{plot}
@@ -398,7 +381,7 @@
  }
 {@@E {
 { @@A { @@E {
-@@D "5118 335"
+@@D "4782 318"
 }
 {{??} @@V @Do {??}} } }
 }
@@ -421,6 +404,23 @@
   \d{@MinorTitle}
   \e{"10.694.conti/grafs.1"}
   \f{@Prefix}}}
+
+{@@E {
+{ @@A { @@E {
+@@D "77 6"
+}
+{@@V @FootNoteCounterIncrement "9.1591.conti/grafs.2"} } }
+}
+{@@V @FootNoteCounterMarker
+  \a{"9.1565.conti/grafs.2"}
+  \b{@@V @FootNoteNum "9.1591.conti/grafs.2"}}}
+
+{@@E {
+@@D "6232 408"
+}
+{@NumberMarker
+  \a{"9.1591.conti/grafs.2"}
+  \b{Arabic @@V @Num {@@V @FootNoteNum "9.1591.conti/grafs.2"}}}}
 
 {@@E {
 { @@B { { @@A { @@E {

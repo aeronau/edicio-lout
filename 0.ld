@@ -265,20 +265,6 @@
 1}}
 
 {@@E {
-@@D "2136 173"
-}
-{@@V @SectionList
-  \a{"10.231.0.2"}
-2}}
-
-{@@E {
-@@D "2136 173"
-}
-{@@V @SectionList
-  \a{"10.231.0.3"}
-3}}
-
-{@@E {
 { @@A { @@E {
 @@D "21 2"
 }
@@ -305,12 +291,26 @@
 @@D "2136 173"
 }
 {@@V @SectionList
+  \a{"10.231.0.2"}
+2}}
+
+{@@E {
+@@D "2136 173"
+}
+{@@V @SectionList
+  \a{"10.231.0.3"}
+3}}
+
+{@@E {
+@@D "2136 173"
+}
+{@@V @SectionList
   \a{"10.231.0.4"}
 4}}
 
 {@@E {
 { @@A { @@E {
-@@D "3632 281"
+@@D "3500 267"
 }
 {@@V @SimpleEvenPageList
   \a{1}
@@ -390,6 +390,13 @@
   \b{0}}}
 
 {@@E {
+@@D "2136 173"
+}
+{@@V @SectionList
+  \a{"10.231.0.7"}
+7}}
+
+{@@E {
 { @@A { @@E {
 @@D "21 2"
 }
@@ -413,15 +420,8 @@
   \b{0}}}
 
 {@@E {
-@@D "2136 173"
-}
-{@@V @SectionList
-  \a{"10.231.0.7"}
-7}}
-
-{@@E {
 { @@A { @@E {
-@@D "4846 392"
+@@D "4912 399"
 }
 {@@V @SimpleEvenPageList
   \a{1}
@@ -479,6 +479,13 @@
 9}}
 
 {@@E {
+@@D "2136 173"
+}
+{@@V @SectionList
+  \a{"10.231.0.10"}
+10}}
+
+{@@E {
 { @@A { @@E {
 @@D "5490 451"
 }
@@ -524,8 +531,15 @@
   \b{0}}}
 
 {@@E {
+@@D "2136 173"
+}
+{@@V @SectionList
+  \a{"10.231.0.11"}
+11}}
+
+{@@E {
 { @@A { @@E {
-@@D "6071 503"
+@@D "6139 510"
 }
 {@@V @SimpleEvenPageList
   \a{1}
@@ -544,13 +558,6 @@
 {@@V @FootNoteCounterMarker
   \a{"9.1565.0.15"}
   \b{0}}}
-
-{@@E {
-@@D "2136 173"
-}
-{@@V @SectionList
-  \a{"10.231.0.10"}
-10}}
 
 {@@E {
 { @@A { @@E {
@@ -577,7 +584,7 @@
 
 {@@E {
 { @@A { @@E {
-@@D "6657 555"
+@@D "6725 562"
 }
 {@@V @SimpleEvenPageList
   \a{1}
@@ -596,6 +603,13 @@
 {@@V @FootNoteCounterMarker
   \a{"9.1565.0.17"}
   \b{0}}}
+
+{@@E {
+@@D "2136 173"
+}
+{@@V @SectionList
+  \a{"10.231.0.12"}
+12}}
 
 {@@E {
 { @@A { @@E {
@@ -621,15 +635,8 @@
   \b{0}}}
 
 {@@E {
-@@D "2136 173"
-}
-{@@V @SectionList
-  \a{"10.231.0.11"}
-11}}
-
-{@@E {
 { @@A { @@E {
-@@D "7175 600"
+@@D "7311 614"
 }
 {@@V @SimpleEvenPageList
   \a{1}
@@ -653,158 +660,8 @@
 @@D "2136 173"
 }
 {@@V @SectionList
-  \a{"10.231.0.12"}
-12}}
-
-{@@E {
-{ @@A { @@E {
-{ @@A { @@E {
-{ @@A { @@E {
-{ @@A { @@E {
-@@D "2136 173"
-}
-{@LUse @TblSetup} } }
-}
-{@LUse @DiagSetup} } }
-}
-{@LUse @GraphSetup} } }
-}
-{@LUse @PieSetup} } }
-}
-{@Section
-  \a{"10.694.0.1"}
-  \b{Característiques avançades}
-{ ??? }}}
-
-{@@E {
-{ @@B { { @@A { @@E {
-{ @@A { @@E {
-{ @@A { @@E {
-{ @@A { @@E {
-@@D "7829 659"
-}
-{@Section
-  \a{"10.694.0.1"}
-  \b{Característiques avançades}
-{ @LInput }} } }
-}
-{@@V @LargeScaleStructure
-  \a{"10.694.0.1"}
-  \b{Minor}
-  \c{}
-  \d{@@V @Title}
-  \e{dft}
-  \g{Bold}
-  \h{@@V @SectionHeadingBreak}
-  \i{@Num @@V @SectionHeadingFormat @Body}
-  \k{Yes}
-  \l{@@V @SectionContentsIndent}
-  \n{Arabic}
-  \o{{@@V @SectionList&&preceding} @Tagged @@V @Tag}
-  \p{{@@V @SectionList&&{@@V @Tag}} @Open {num}}
-  \q{dft}
-  \r{}
-  \t{}
-  \u{}
-  \x{No}
-  \y{Yes}
-  \z{No}
-  intables{No}
-  infloaters{No}
-  inrunners{Yes}
-  newpage{No}
-@@V @Body} } }
-}
-{@@V @Heading} } }
-}
-{@@V @Run @@V @StartIfMajor} } }
- }
-{@@E {
-{ @@A { @@E {
-@@D "8089 679"
-}
-{?? @@V @Do ??} } }
-}
-{@@V y}} }
-}
-{@@V start @Runner
-  \g{"9.966.0.5"}
-  \a{{} @@V @Dft @@V @LongNum}
-  \b{{} @@V @Dft @@V @ShortTitle}
-  \c{dft @@V @Dft @@V @LongNum}
-  \d{dft @@V @Dft @@V @ShortTitle}
-  \e{"10.694.0.1"}
-  \f{{} @Join @@V @ShortNum}}}
-
-{@@E {
-{ @@B { @@D "8117 681"
- }
-{@@E {
-{ @@A { @@E {
-@@D "8117 681"
-}
-{?? @@V @Do ??} } }
-}
-{@@V y}} }
-}
-{@NumberMarker
-  \a{"10.694.0.1"}
-  \b{@@V @ShortNum}}}
-
-{@@E {
-{ @@A { @@E {
-{ @@A { @@E {
-@@D "8117 681"
-}
-{@@V @ContentsStuff} } }
-}
-{Yes @@V @ContentsEntry
-  \a{@@V contentsindent}
-  \b{"10.694.0.1"}
-  \c{@@V @LongNum}
-  \d{@@V initiallanguage @Language @@V title}
-  \e{@PageOf "10.694.0.1"}} } }
-}
-{@@V @SendContents @@V @ContentsItem
-  \a{@@V indent}
-  \b{"10.694.0.1"}
-  \c{@@V number}
-  \d{@@V title}
-  \e{@@V pagenum}
-  \f{@@V pregap}
-  \g{@@V postgap}}}
-
-{@@E {
-@@D "8117 681"
-}
-{@TitleMarker
-  \a{"10.694.0.1"}
-  \b{@@V title}}}
-
-{@@E {
-{ @@B { { @@A { @@E {
-@@D "8117 681"
-}
-{Yes @BeginDisplayCounter @@V @ShortNum} } }
- }
-{@@E {
-{ @@A { @@E {
-@@D "9728 784"
-}
-{?? @@V @Do ??} } }
-}
-{@@V y}} }
-}
-{@@V @NumDispCounterMarker
-  \a{"4.1475.0.2"}
-  \b{@@V prefix @Join 0}}}
-
-{@@E {
-@@D "2136 173"
-}
-{@@V @SubSectionList
-  \a{"10.238.0.1"}
-1}}
+  \a{"10.231.0.13"}
+13}}
 
 {@@E {
 { @@A { @@E {
@@ -832,13 +689,13 @@
 {@@E {
 @@D "2136 173"
 }
-{@@V @SubSectionList
-  \a{"10.238.0.2"}
-2}}
+{@@V @SectionList
+  \a{"10.231.0.14"}
+14}}
 
 {@@E {
 { @@A { @@E {
-@@D "10030 809"
+@@D "7897 666"
 }
 {@@V @SimpleEvenPageList
   \a{1}
@@ -857,32 +714,6 @@
 {@@V @FootNoteCounterMarker
   \a{"9.1565.0.21"}
   \b{0}}}
-
-{@OptGall {80 58 47 50 49 49 44 49 49 12 21 24 16 23 8 28 33 55 48 50
-13}}
-
-{@@E {
-{ @@B { { @@A { @@E {
-@@D "8117 681"
-}
-{@@V @Run NonStart} } }
- }
-{@@E {
-{ @@A { @@E {
-@@D "10702 864"
-}
-{?? @@V @Do ??} } }
-}
-{@@V y}} }
-}
-{NonStart @Runner
-  \g{"9.966.0.6"}
-  \a{{} @@V @Dft @@V @LongNum}
-  \b{{} @@V @Dft @@V @ShortTitle}
-  \c{dft @@V @Dft @@V @LongNum}
-  \d{dft @@V @Dft @@V @ShortTitle}
-  \e{"10.694.0.1"}
-  \f{{} @Join @@V @ShortNum}}}
 
 {@@E {
 { @@A { @@E {
@@ -909,7 +740,47 @@
 
 {@@E {
 { @@A { @@E {
-@@D "7829 659"
+@@D "8483 718"
+}
+{@@V @SimpleEvenPageList
+  \a{1}
+  \b{Simple}
+20} } }
+}
+{@PageMarker
+  \a{"4.1276.0.23"}
+  \c{20}
+  \b{Arabic @@V @Num 20}
+  \d{"Even"}}}
+
+{@@E {
+@@D "21 2"
+}
+{@@V @FootNoteCounterMarker
+  \a{"9.1565.0.23"}
+  \b{0}}}
+
+{@OptGall {92 62 56 49 49 50 47 47 50 40 50 13 17 40 3 29 10 18 21 51
+48 49 30}}
+
+{@@E {
+{ @@A { @@E {
+{ @@A { @@E {
+{ @@A { @@E {
+{ @@A { @@E {
+{ @@A { @@E {
+{ @@A { @@E {
+@@D "21 2"
+}
+{@LUse @ReportSetup} } }
+}
+{@LUse @TblSetup} } }
+}
+{@LUse @DiagSetup} } }
+}
+{@LUse @GraphSetup} } }
+}
+{@LUse @PieSetup} } }
 }
 {@Report
   \a{Composició de textos mitjançant Lout}
@@ -926,7 +797,7 @@
 { @@B { { @@A { @@E {
 { @@A { @@E {
 { @@A { @@E {
-@@D "11322 910"
+@@D "9083 766"
 }
 {@@V @ReferencesPart
   \a{"10.385.0.1"}} } }
@@ -955,7 +826,7 @@
  }
 {@@E {
 { @@A { @@E {
-@@D "11790 925"
+@@D "9743 796"
 }
 {@@V sendheader {
 //{@@V aboveheadinggap} @@V headingfont @Font {@@V headingbreak @Break {@@V @LongNum @@V headingformat @@V title}}
@@ -969,14 +840,14 @@
  }
 {@@E {
 { @@A { @@E {
-@@D "11768 924"
+@@D "9721 795"
 }
 {?? @@V @Do ??} } }
 }
 {@@V y}} }
 }
 {@@V start @Runner
-  \g{"9.966.0.7"}
+  \g{"9.966.0.5"}
   \a{{} @@V @Dft @@V @LongNum}
   \b{{} @@V @Dft @@V @ShortTitle}
   \c{}
@@ -987,7 +858,7 @@
 {@@E {
 { @@A { @@E {
 { @@A { @@E {
-@@D "11804 926"
+@@D "9757 797"
 }
 {@@V @ContentsStuff} } }
 }
@@ -1009,7 +880,7 @@
   \h{Yes}}}
 
 {@@E {
-@@D "11804 926"
+@@D "9757 797"
 }
 {@TitleMarker
   \a{"10.385.0.1"}
@@ -1030,7 +901,7 @@
 
 {@@E {
 { @@A { @@E {
-@@D "13429 1019"
+@@D "11377 890"
 }
 {@@V @RefList 2} } }
 }
@@ -1040,20 +911,20 @@
 
 {@@E {
 { @@B { { @@A { @@E {
-@@D "11804 926"
+@@D "9757 797"
 }
 {@@V @Run NonStart} } }
  }
 {@@E {
 { @@A { @@E {
-@@D "13710 1041"
+@@D "11657 912"
 }
 {?? @@V @Do ??} } }
 }
 {@@V y}} }
 }
 {NonStart @Runner
-  \g{"9.966.0.8"}
+  \g{"9.966.0.6"}
   \a{{} @@V @Dft @@V @LongNum}
   \b{{} @@V @Dft @@V @ShortTitle}
   \c{}

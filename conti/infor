@@ -10,6 +10,37 @@ Aquesta guia exposa els diferents passos que ha de seguir un usuari des de la cr
 
 @BeginSubSections
 @SubSection
+    @Title { Per què utilitzar Lout? }
+@Begin
+
+@PP
+Lout, a diferència d'altres opcions per crear documents i informes, té les següents característiques:
+
+@BulletList
+	@ListItem { Compta amb documents de suport admirables. }
+	@ListItem { El compilador és prou explícit amb els errors. }
+	@ListItem { El sistema Lout ocupa una fracció del que ocupa {@LaTeX}. }
+	@ListItem { El sistema crea documents de qualitat. }
+	@ListItem { El llenguatge és consistent i coherent per crear textos, gràfics, matemàtiques i taules. }
+	@ListItem { S'ofereixen un gran nombre de plantilles per finalitats molt diverses. Plantilles per crear articles, presetacions i informes ja venen per defecte. }
+	@ListItem { El sistema permet automatització i és prou bo per documents de gran complexitat. }
+	@ListItem { Es garanteix la obtenció d'un fitxer PostScript o PDF d'un document creat mitjançant Lout d'aquí molts anys, mentre el programa Lout encara sigui compilable. }
+@EndList
+
+Tanmateix, té els "defectes" següents:
+
+@BulletList
+	@ListItem { Tots els documents han d'estar codificats amb ISO-LATIN-1. }
+	@ListItem { El sistema pot tenir problemes amb algunes llengües. }
+	@ListItem { Pocs usuaris utilitzen el sistema. }
+	@ListItem { Poca informació i recursos d'ajuda a la xarxa disponibles. }
+	@ListItem { Crear documents PDF de manera nativa ofereix pitjors resultats que crear-los a partir del fitxer PostScript obtingut prèviament amb el compilador. El document PostScript que es pot obtenir nativament és de bona qualitat, tanmateix. }
+	@ListItem { L'eina no presentarà actualitzacions per part de l'autor original a favor del nou projecte Nonpareil. }
+@EndList
+
+@End @SubSection
+
+@SubSection
     @Title { Programari }
 @Begin
 
