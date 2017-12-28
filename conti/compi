@@ -24,6 +24,9 @@ Un mètode fàcil per convertir un fitxer PostScript a PDF és utilitzant l'eina ps
 @PP
 Si utilitzeu el visualitzador SumatraPDF per veure els fitxers @Code .ps @FootNote { Per fer-ho, heu d'instal·lar Ghostscript anteriorment. } podeu utilitzar l'element del menú @MenuEle File @Sym arrowright @MenuEle { Save As... } i escollir el tipus de fitxer en el menú d'opcions, entre les quals hi ha PDF.
 
+@PP
+També podeu aprofitar les capacitats del vostre lector PostScript per imprimir a un fitxer PDF directament.
+
 @End @SubSection
 @EndSubSections
 
